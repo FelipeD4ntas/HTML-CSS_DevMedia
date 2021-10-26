@@ -158,7 +158,7 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    flex: 0 0 auto;
+    flex: 1 1 auto;
 }
 
 .box-sobre {
@@ -167,6 +167,7 @@ main {
 }
 
 .desc {
+    float: left;
     width: 300px;
     text-align: justify;
     padding: 0px 20px;
@@ -174,6 +175,6 @@ main {
 
 .sobre-pousada img {
     float: right;
-    height: 120px;
-    width: 100px;
+    height: 130px;
+    width: 110px;
 }
