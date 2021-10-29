@@ -51,10 +51,8 @@
         }
         
         .link-topo a:hover {
-            background: var(--logo);
-            border-radius: 4px;
-            color: white;
-            transition: color 0.4s;
+            color: var(--span);
+            transition: color 0.3s;
         }
         
         .pousada-secreta a {
