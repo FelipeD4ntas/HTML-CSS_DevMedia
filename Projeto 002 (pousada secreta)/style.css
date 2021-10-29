@@ -146,7 +146,8 @@
         }
         
         .quartos a:hover {
-            color: black;
+            color: var(--span);
+            transition: color 0.3s;
         }
         
         .quartos a p {
