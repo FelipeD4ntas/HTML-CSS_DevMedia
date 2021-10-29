@@ -27,6 +27,10 @@
     margin: 30px;
 }
 
+.lista {
+    padding: 0px 60px;
+}
+
 .lista ul {
     display: flex;
     flex-wrap: wrap;
