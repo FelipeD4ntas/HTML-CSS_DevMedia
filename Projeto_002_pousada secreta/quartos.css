@@ -36,13 +36,12 @@
     flex-wrap: wrap;
     list-style-position: inside;
     justify-content: space-between;
-    padding: 0px 60px;
+    padding: 0px 15px;
 }
 
 .lista li {
     text-align: left;
     padding: 10px;
-    
 }
 
 .lista-1 {
@@ -51,9 +50,8 @@
 
 .lista-2 {
     width: 300px;
-   
 }
 
 .lista-3 {
-    width: 300px;
+    width: 300px
 }
