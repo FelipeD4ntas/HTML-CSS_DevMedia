@@ -19,6 +19,7 @@
         #menu {
             position: fixed;
             max-width: 100%;
+            min-width: 520px;
             top: 0;
             left: 0;
             right: 0;
@@ -32,9 +33,11 @@
             justify-content: space-between;
             align-items: center;
             max-width: 1024px;
+            min-width: 520px;
             margin: 0px auto;
             font-weight: 600;
             padding: 15px;
+            padding-right: 40px;
         }
         
         .box-link-topo {
@@ -67,12 +70,15 @@
         
         main {
             max-width: 100%;
+            min-width: 520px;
         }
         
         .box-logo {
             background-image: url('imagens/img-fundo.jpg');
             background-size: cover;
             height: 100vh;
+            max-width: 100%;
+            min-width: 520px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -82,9 +88,7 @@
             text-align: center;
             background: var(--logo);
             color: white;
-            border: 1px solid white;
-            border-radius: 4px;
-            padding: 0 20px;
+            border: 1px solid white; 
         }
         
         .logo h1 {
@@ -99,6 +103,7 @@
         
         .box-artigos {
             max-width: 1024px;
+            min-width: 520px;
             margin: 0px auto;
         }
         
@@ -123,14 +128,15 @@
             justify-content: space-evenly;
             align-items: center;
             max-width: 1024px;
+            min-width: 520px;
             margin: 0px auto;
             padding: 0px 5px;
+            flex-wrap: wrap;
         }
         
         .quartos {
-            margin-left: 20px;
             border-bottom: 2px solid var(--bordas);
-            padding: 0px 10px;
+            padding: 5px 5px;
         }
         
         .box-quartos div:first-child {
@@ -156,6 +162,7 @@
         
         .box-mapa {
             max-width: 100%;
+            min-width: 520px;
         }
         
         .mapa iframe {
@@ -167,14 +174,16 @@
             flex-flow: row wrap;
             justify-content: space-between;
             max-width: 1024px;
+            min-width: 520px;
             padding: 0 20px;
         }
         
         .sobre-pousada {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
+            padding-bottom: 10px;
             flex-basis: 45%;
-            height: 143px;
             margin: 20px auto;
         }
         
@@ -187,7 +196,7 @@
         }
         
         .desc h3 {
-            margin: 20px 0px;
+            margin: 10px 0px;
         }
         
         .desc p {
@@ -195,18 +204,21 @@
         }
         
         .sobre-pousada img {
+            padding-top: 15px;
             height: 143px;
             width: 130px;
         }
         
         footer {
             max-width: 100%;
+            min-width: 520px;
             background: var(--rodape);
             margin-top: 30px;
         }
         
         .contatos {
             max-width: 1024px;
+            min-width: 520px;
             margin: 0px auto;
             display: flex;
             justify-content: space-between;
@@ -217,7 +229,7 @@
         
         .contatos h4 {
             font-size: 1.3em;
-            max-width: 200px;
+            max-width: 160px;
             color: white;
         }
         
@@ -227,8 +239,8 @@
         
         .link-rodape {
             display: flex;
-            align-items: center;
-            max-width: calc(814px / 3);
+            flex-wrap: wrap;
+            max-width: 35%;
             padding: 5px;
         }
         
@@ -249,6 +261,7 @@
         
         .copyright {
             max-width: 1024px;
+            min-width: 520px;
             margin: 0px auto;
             text-align: center;
             color: white;
