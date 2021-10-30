@@ -36,17 +36,17 @@
             margin: 0px auto;
             font-weight: 600;
             padding: 15px;
-            padding-right: 40px;
         }
         
-        .box-link-topo {
+        .link-topo {
             display: flex;
+            justify-content: space-evenly;
+            width: 300px;
         }
         
         .link-topo a {
             text-decoration: none;
             text-transform: uppercase;
-            margin-left: 30px;
             color: var(--letras);
             font-size: 1em;
             padding: 5px;
@@ -219,16 +219,18 @@
             max-width: 1024px;
             margin: 0px auto;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             border-bottom: 2px solid var(--bordas);
-            padding: 30px 10px;
+            padding: 30px 10px 15px 10px;
         }
         
         .contatos h4 {
             font-size: 1.3em;
             max-width: 160px;
             color: white;
+            padding-bottom: 15px;
         }
         
         .contatos div:first-child {
@@ -238,8 +240,8 @@
         .link-rodape {
             display: flex;
             flex-wrap: wrap;
-            max-width: 35%;
-            padding: 5px;
+            padding: 5px 5px 15px 5px;
+        
         }
         
         .link-rodape img {
