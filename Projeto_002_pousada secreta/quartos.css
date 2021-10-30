@@ -34,13 +34,15 @@
 .lista ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     list-style-position: inside;
+    justify-content: space-between;
+    padding: 0px 60px;
 }
 
 .lista li {
     text-align: left;
     padding: 10px;
+    
 }
 
 .lista-1 {
@@ -49,6 +51,7 @@
 
 .lista-2 {
     width: 300px;
+   
 }
 
 .lista-3 {
