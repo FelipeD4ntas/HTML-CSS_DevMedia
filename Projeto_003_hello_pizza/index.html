@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Baloo|Reenie+Beanie|Roboto:400,500,500i" rel="stylesheet">
+        <title>Hello Pizza</title>
+    </head>
+    <body>
+        <header>
+
+            <section class="logo">
+                <figure>
+                    <img src="img/logo-helloPizza.png" alt="Logo Hello Pizza">
+                </figure>
+            </section>
+
+            <section class="menu">
+                <ul>
+                    <li><a href="#home" target="_self" rel="next">home</a></li>
+                    <li><a href="#sabores" target="_self" rel="next">sabores</a></li>
+                    <li><a href="#contato" target="_self" rel="next">contato</a></li>
+                </ul>
+            </section>
+
+        </header>
+
+        <main>
+
+            <section id="home">
+                <ul>
+                    <li>Qualidade</li>
+                    <li>Sabor</li>
+                    <li>Praticidade</li>
+                    <li>Agilidade</li>
+                </ul>
+            </section>
+
+            <section id="sabores">
+                <div class="titulos">
+                    <h2>sabores</h2>
+                </div>
+
+                <figure>
+                    <img src="img/sabores-pizzas.png" alt="Sabores">
+                </figure>
+
+                <div class="box-tabela">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>pizzas</th>
+                                <th>queijo e molho</th>
+                                <th>salada</th>
+                                <th>carne</th>
+                                <th>azeite/champignon</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>mozarella</td>
+                                <td rowspan="6" class="txt-positivo">sim</td>
+                                <td class="txt-negativo">não</td>
+                                <td class="txt-negativo">não</td>
+                                <td class="txt-negativo">não</td>
+                            </tr>
+                            <tr>
+                                <td>calabreza</td>
+                                <td class="txt-negativo">não</td>
+                                <td class="txt-positivo">sim</td>
+                                <td class="txt-positivo">sim</td>
+                            </tr>
+                            <tr>
+                                <td>pepperoni</td>
+                                <td class="txt-negativo">não</td>
+                                <td class="txt-positivo">sim</td>
+                                <td class="txt-positivo">sim</td>
+                            </tr>
+                            <tr>
+                                <td>marguerita</td>
+                                <td class="txt-positivo">sim</td>
+                                <td class="txt-positivo">sim</td>
+                                <td class="txt-positivo">sim</td>
+                            </tr>
+                            <tr>
+                                <td>portuguesa</td>
+                                <td class="txt-positivo">sim</td>
+                                <td class="txt-positivo">sim</td>
+                                <td class="txt-positivo">sim</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-negativo">alho</td>
+                                <td class="txt-negativo">não</td>
+                                <td class="txt-negativo">não</td>
+                                <td class="txt-negativo">não</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="contato">
+
+                <div class="titulos">
+                    <h2>contato</h2>
+                </div>
+
+                <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="post">
+                    <div>
+                        <label for="nome">nome</label>
+                        <input type="text" name="user_name" id="nome" placeholder="DIGITE SEU NOME">
+                    </div>
+
+                    <div>
+                        <label for="email">e-mail</label>
+                        <input type="email" name="user_email" id="email" placeholder="DIGITE SEU E-MAIL">
+                    </div>
+
+                    <div>
+                        <label for="msg">mensagem</label>
+                        <textarea rows="5" name="user_mensagem" id="msg" placeholder="DIGITE SUA MENSAGEM"></textarea>
+                    </div>
+
+                    <div>
+                        <input type="submit" valuer="enviar">
+                    </div>
+                </form>
+
+            </section>
+            
+        </main>
+
+        <footer>
+            <figure>
+                <img src="img/logo-helloPizza.png" alt="Logo Hello Pizza">
+            </figure>
+            <p>Todos os direitos reservados &copy; 2021</p>
+        </footer>
+    </body>
+</html>
