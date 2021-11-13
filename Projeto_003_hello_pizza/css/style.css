@@ -1,4 +1,16 @@
     @charset "UTF-8";
+
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        background: rgb(19, 19, 19) url('../img/background-pizza.png') no-repeat top center;
+        background-size: 100%;
+        font-size: 1.6rem;
+    }
+    
+    
     * {
         box-sizing: border-box;
         margin: 0;
@@ -6,17 +18,13 @@
         font-family: 'Roboto', sans-serif;
         letter-spacing: 0.1em;
     }
-    
-    body {
-        background: rgb(19, 19, 19) url('img/background-pizza.png') no-repeat top center;
-        background-size: 100%;
-    }
+
     /* TOPO */
-    
     header {
         display: flex;
         justify-content: center;
-        width: 100%;
+        max-width: 100vw;
+        min-width: 50rem;
         background: rgba(0, 0, 0, 0.397);
     }
     
@@ -25,7 +33,7 @@
         justify-content: space-between;
         align-items: center;
         width: 90%;
-        padding: 40px;
+        padding: 4rem;
     }
     
     .menu ul {
@@ -34,7 +42,7 @@
     
     .menu ul li {
         list-style-type: none;
-        margin-left: 100px;
+        margin-left: 5rem;
     }
     
     .menu ul li a {
@@ -42,40 +50,51 @@
         text-transform: uppercase;
         font-weight: 600;
         color: white;
+        padding: 1rem;
+    }
+
+    .menu ul li a:hover {
+        background: rgba(0, 0, 0, 0.397);
+        border-radius: 1rem;
+        color: rgb(216, 216, 216);
+        transition: color 0.3s;
     }
     /* FIM TOPO */
     
     main {
-        width: 90%;
-        padding: 40px;
+        max-width: 90%;
+        min-width: 50rem;
+        padding: 4rem;
         margin: 0 auto;
     }
-    /* HOME */
-    
-    #home {
+
+    /* VANTAGENS */  
+    #vantagens {
         color: white;
-        height: 60vh;
-        margin: 20px 0px;
+        height: 70vh;
     }
     
-    #home ul {
+    #vantagens ul {
         list-style: none;
     }
     
-    #home ul li {
+    #vantagens ul li {
         font-family: 'Reenie Beanie', cursive;
-        font-size: 2.5em;
+        font-size: 3.5rem;
+        padding: 1rem;
+        
     }
     
-    #home ul li::before {
-        content: '\00b0\0020';
+    #vantagens ul li::before {
+        content: '\00b0';
         color: rgb(208, 163, 48);
-        font-size: 50px;
+        font-size: 3.4rem;
+        padding: 0.5rem;
         font-family: 'Roboto', sans-serif;
     }
-    /* FIM HOME */
+    /* FIM VANTAGENS */
+
     /* SABORES */
-    
     #sabores {
         display: flex;
         flex-flow: column wrap;
@@ -86,26 +105,31 @@
         display: inline-block;
         background: rgba(0, 0, 0, 0.397);
         color: white;
-        padding: 20px;
-        margin-bottom: 40px;
-        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 4rem;
+        border-radius: 1.5rem;
         text-transform: uppercase;
         font-weight: 100;
     }
     
     .box-ingredientes {
+        display: flex;
+        justify-content: center;
         width: 100%;
-        margin: 90px auto;
+        margin: 9rem 0rem;
     }
-    
+
+    table {
+        width: 100%;
+    }
+
     .box-ingredientes table th {
         background: rgb(42, 42, 42);
         color: rgb(77, 77, 75);
         text-transform: uppercase;
         text-align: center;
         font-size: 0.7em;
-        width: calc(70% / 5);
-        padding: 20px;
+        padding: 2rem;
         color: rgb(77, 77, 75);
     }
     
@@ -115,8 +139,7 @@
         text-transform: uppercase;
         text-align: center;
         font-size: 0.7em;
-        width: calc(70% / 5);
-        padding: 20px;
+        padding: 2rem;
     }
     
     .box-ingredientes table td.txt-positivo {
@@ -129,12 +152,13 @@
         font-weight: 600;
     }
     /* FIM SABORES */
+   
     /* CONTATO */
-    
     #contato {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
+        width: 100%;
     }
     
     form {
@@ -145,3 +169,50 @@
         color: white;
         width: 50%;
     }
+
+    form input#nome, #email, #msg {
+        background: transparent;
+        border: 1px solid rgb(77, 77, 75);
+        border-radius: 3rem;
+        margin: 1.5rem 0rem;
+        padding: 2rem;
+        font-style: italic;
+    }
+
+    form textarea {
+        background: transparent;
+        border: 0.1rem solid rgb(77, 77, 75);
+        border-radius: 30px;
+        margin: 1.5rem 0rem;
+        padding: 2rem;
+    }
+
+    form input#envio {
+        background: transparent;
+        border: 0.1rem solid rgb(77, 77, 75);
+        border-radius: 3rem;
+        margin: 1rem 0rem;
+        padding: 1rem;
+        color: white;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+    /* FIM-CONTATO */
+
+    /* RODAPÉ */
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        max-width: 100vw;
+        min-width: 50rem;
+        background: rgb(42, 42, 42);
+        padding: 3rem 0rem 1rem 0rem;
+    }
+
+    footer p {
+        color: white;
+        padding: 1.5rem;
+        font-size: 0.7em;
+    }
+    /* FIM-RODAPÉ */
