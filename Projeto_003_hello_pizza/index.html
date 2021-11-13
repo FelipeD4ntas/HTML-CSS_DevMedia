@@ -12,27 +12,22 @@
 
 <body>
     <header>
+        <section class="logo">
+            <figure>
+                <a href="index.html" target="_self" rel="prev"><img src="img/logo-helloPizza.png" alt="Logo Hello Pizza"></a>
+            </figure>
+        </section>
 
-        <div class="box-topo">
-            <section class="logo">
-                <figure>
-                    <a href="index.html" target="_self" rel="prev"><img src="img/logo-helloPizza.png" alt="Logo Hello Pizza"></a>
-                </figure>
-            </section>
-
-            <section class="menu">
-                <ul>
-                    <li><a href="index.html" target="_self" rel="prev">home</a></li>
-                    <li><a href="#sabores" target="_self" rel="next">sabores</a></li>
-                    <li><a href="#contato" target="_self" rel="next">contato</a></li>
-                </ul>
-            </section>
-        </div>
-
+        <section class="menu">
+            <ul>
+                <li><a href="index.html" target="_self" rel="prev">home</a></li>
+                <li><a href="#sabores" target="_self" rel="next">sabores</a></li>
+                <li><a href="#contato" target="_self" rel="next">contato</a></li>
+            </ul>
+        </section>
     </header>
 
     <main>
-
         <section id="vantagens">
             <ul>
                 <li>Qualidade</li>
@@ -63,7 +58,7 @@
                             <th>queijo e molho</th>
                             <th>salada</th>
                             <th>carne</th>
-                            <th>azeite/champignon</th>
+                            <th>azeite / champignon</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -109,13 +104,17 @@
             </div>
         </section>
 
+        <section class="pedidos">
+            <a href="pedidos.html" target="_self" rel="next" class="titulos">Veja nosso Cardápio!</a>
+        </section>
+
+
         <section id="contato">
             <div class="titulos">
                 <h2>contato</h2>
             </div>
 
             <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="post">
-
                 <label for="nome">nome:</label>
                 <input type="text" name="user_name" id="nome" placeholder="DIGITE SEU NOME">
 
@@ -126,7 +125,6 @@
                 <textarea rows="10" name="user_mensagem" id="msg" placeholder="DIGITE SUA MENSAGEM"></textarea>
 
                 <input type="submit" valuer="enviar" id="envio">
-
             </form>
         </section>
 
