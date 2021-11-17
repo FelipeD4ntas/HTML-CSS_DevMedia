@@ -60,13 +60,15 @@
         filter: grayscale(0%);
     }
     
-    .link {
-        text-decoration: none;
-    }
-    
     .futebol:hover .link::after {
         content: "futebol";
+    }
+    
+    .futebol:hover .link {
+        text-decoration: none;
         text-transform: uppercase;
         font-weight: bold;
         color: white;
+        transform: scale(2);
+        transition: transform 0.5s;
     }
