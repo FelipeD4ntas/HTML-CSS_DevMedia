@@ -192,21 +192,28 @@
         width: 50%;
     }
 
-    form input#nome, #email, #msg {
+    form input[type=text], input[type=email] {
         background: transparent;
         border: 1px solid rgb(77, 77, 75);
         border-radius: 3rem;
         margin: 1.5rem 0rem;
         padding: 2rem;
         font-style: italic;
+        color: white;
     }
 
+    input:active {
+        background-image: none;
+        background-color: black ;;
+    }
+    
     form textarea {
         background: transparent;
         border: 0.1rem solid rgb(77, 77, 75);
         border-radius: 30px;
         margin: 1.5rem 0rem;
         padding: 2rem;
+        color: white;
     }
 
     form input#envio {
@@ -225,6 +232,12 @@
         color: rgb(216, 216, 216);
         transition: color 0.3s;
     }
+
+    form input[type=text]:focus, input[type=email]:focus, textarea:focus {
+        background: #2A2A2A;
+
+    }
+
     /* FIM-CONTATO */
 
     /* RODAPÉ */
