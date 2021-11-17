@@ -22,13 +22,16 @@
     
     .item {
         list-style-type: none;
-        width: 25vw;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-grow: 1;
+        transition: 0.8s;
+        filter: grayscale(100%);
     }
     
     .link {
+        display: none;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 2.5rem;
@@ -40,31 +43,28 @@
         background-image: url("img/item1.png");
         background-position: center center;
         background-size: cover;
-        filter: grayscale(100%);
     }
     
     .natacao {
         background-image: url("img/item2.png");
         background-position: center center;
         background-size: cover;
-        filter: grayscale(100%);
     }
     
     .basquete {
         background-image: url("img/item3.png");
         background-position: center center;
         background-size: cover;
-        filter: grayscale(100%);
-        flex-grow: 1;
     }
     
     .corrida {
         background-image: url("img/item4.png");
         background-position: center center;
         background-size: cover;
-        filter: grayscale(100%);
     }
     
     .item:hover {
         flex-grow: 10;
+        transition: 0.8s;
+        filter: grayscale(0%);
     }
