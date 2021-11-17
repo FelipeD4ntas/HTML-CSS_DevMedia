@@ -26,49 +26,55 @@
         justify-content: center;
         align-items: center;
         flex-grow: 1;
-        transition: 0.9s;
+        transition: all .7s ease-in-out;
         filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .item:hover {
+        flex-grow: 10;
+        filter: grayscale(0%);
+        -webkit-filter: grayscale(0%);
+    }
+
+    .item .link {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        font-size: 0;
+        transition: all .5s ease-in-out;
+    }
+
+    .item:hover .link {
+        font-size: 3.2rem;
+        text-shadow: 2px 2px 12px black;
     }
     
     .futebol {
         background-image: url("img/item1.png");
-        background-position: center center;
-        background-size: cover;
     }
     
     .natacao {
-        background-image: url("img/item2.png");
-        background-position: center center;
-        background-size: cover;
+        background-image: url("img/item2.png");  
     }
     
     .basquete {
         background-image: url("img/item3.png");
-        background-position: center center;
-        background-size: cover;
     }
     
     .corrida {
-        background-image: url("img/item4.png");
-        background-position: center center;
-        background-size: cover;
+        background-image: url("img/item4.png");  
     }
-    
-    .item:hover {
-        flex-grow: 10;
-        transition: 1.2s;
-        filter: grayscale(0%);
-    }
-    
-    .futebol:hover .link::after {
-        content: "futebol";
-    }
-    
-    .futebol:hover .link {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: white;
-        transform: scale(2);
-        transition: transform 0.5s;
+
+    @media screen and (max-width: 768px) {
+        .box-lista {
+            flex-direction: column;
+        }
+
+        .item .link {
+            font-size: 2rem;
+        }
     }
