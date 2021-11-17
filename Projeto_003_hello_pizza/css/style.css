@@ -1,0 +1,300 @@
+    @charset "UTF-8";
+
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        background: rgb(19, 19, 19) url('../img/background-pizza.png') no-repeat top center;
+        background-size: 100%;
+        font-size: 1.6rem;
+    }
+    
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 0.1em;
+    }
+
+    /* TOPO */
+    header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 100vw;
+        background: rgba(0, 0, 0, 0.397);
+        padding: 2rem;
+    }
+     
+    .menu ul {
+        display: flex;
+        padding: 2rem;
+    }
+    
+    .menu ul li {
+        list-style-type: none;
+        margin-left: 5rem;
+    }
+
+    .menu ul li:first-child {
+        list-style-type: none;
+        margin-left: 0;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: white;
+        padding: 1rem;
+    }
+
+    .menu ul li a:hover {
+        background: rgba(0, 0, 0, 0.397);
+        border-radius: 1rem;
+        color: rgb(216, 216, 216);
+        transition: color 0.3s;
+    }
+    /* FIM TOPO */
+    
+    main {
+        max-width: 80%;
+        padding: 4rem;
+        margin: 0 auto;
+    }
+
+    /* VANTAGENS */  
+    #vantagens {
+        color: white;
+        height: 70vh;
+    }
+    
+    #vantagens ul {
+        list-style: none;
+    }
+    
+    #vantagens ul li {
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 3.5rem;
+        padding: 1rem;
+        
+    }
+    
+    #vantagens ul li::before {
+        content: '\00b0';
+        color: rgb(208, 163, 48);
+        font-size: 3.4rem;
+        padding: 0.5rem;
+        font-family: 'Roboto', sans-serif;
+    }
+    /* FIM VANTAGENS */
+
+    /* PEDIDOS */ 
+    .pedidos {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10rem;
+    }
+    .pedidos a {
+         text-decoration: none;
+         font-weight: 600;
+     }
+    /* FIM PEDIDOS */ 
+
+    /* SABORES */
+    #sabores {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
+    .titulos {
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.397);
+        color: white;
+        padding: 2rem;
+        margin-bottom: 4rem;
+        border-radius: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+
+    .pedidos .titulos {
+        background: transparent;
+    }
+
+    .pedidos .titulos:hover {
+        background: rgba(0, 0, 0, 0.397);
+        border-radius: 1rem;
+        color: rgb(216, 216, 216);
+        transition: color 0.3s;
+    }
+    
+    .box-ingredientes {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 9rem 0rem;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    .box-ingredientes table th {
+        background: rgb(42, 42, 42);
+        color: rgb(77, 77, 75);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 0.7em;
+        padding: 2rem;
+        color: rgb(77, 77, 75);
+    }
+    
+    .box-ingredientes table td {
+        background: rgb(42, 42, 42);
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 0.7em;
+        padding: 2rem;
+    }
+    
+    .box-ingredientes table td.txt-positivo {
+        color: green;
+        font-weight: 600;
+    }
+    
+    .box-ingredientes table td.txt-negativo {
+        color: rgb(180, 61, 61);
+        font-weight: 600;
+    }
+    /* FIM SABORES */
+   
+    /* CONTATO */
+    #contato {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 100%;
+    }
+    
+    form {
+        display: flex;
+        flex-flow: column wrap;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        color: white;
+        width: 50%;
+    }
+
+    form input#nome, #email, #msg {
+        background: transparent;
+        border: 1px solid rgb(77, 77, 75);
+        border-radius: 3rem;
+        margin: 1.5rem 0rem;
+        padding: 2rem;
+        font-style: italic;
+    }
+
+    form textarea {
+        background: transparent;
+        border: 0.1rem solid rgb(77, 77, 75);
+        border-radius: 30px;
+        margin: 1.5rem 0rem;
+        padding: 2rem;
+    }
+
+    form input#envio {
+        background: transparent;
+        border: 0.1rem solid rgb(77, 77, 75);
+        border-radius: 3rem;
+        margin: 1rem 0rem;
+        padding: 1rem;
+        color: white;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+
+    form input#envio:hover {
+        background: rgb(42, 42, 42);
+        color: rgb(216, 216, 216);
+        transition: color 0.3s;
+    }
+    /* FIM-CONTATO */
+
+    /* RODAPÉ */
+    footer {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        max-width: 100vw;
+        background: rgb(42, 42, 42);
+        padding: 3rem 0rem 1rem 0rem;
+    }
+
+    footer p {
+        color: white;
+        padding: 1.5rem;
+        font-size: 0.7em;
+    }
+    /* FIM-RODAPÉ */
+
+    @media (max-width: 768px) {
+        main {
+            max-width: 100%;
+        }
+
+        .box-ingredientes {
+            max-width: 100%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        main {
+            padding: 1rem;
+        }
+
+        form {
+            width: 100%;
+        }
+        
+        #sabores figure {
+           display: none;
+        }
+    
+        .box-ingredientes table th {
+            padding: 1rem;
+        }
+        
+        .box-ingredientes table td {
+            padding: 1rem;
+        }
+    }
+
+    @media (max-width: 465px) {
+        .menu {
+            display: none;
+        }
+
+        #sabores {
+            display: none;
+        }
+
+        .pedidos {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10rem;
+        }
+        .pedidos a {
+             text-decoration: none;
+             font-weight: 600;
+         }
+        
+    }
+        
+      

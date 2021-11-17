@@ -1,0 +1,82 @@
+body {
+    background: rgb(19, 19, 19) url('../img/background-pedidos.png') no-repeat top center;
+    background-size: 100%;
+    font-size: 1.6rem;
+}
+
+.titulos h2, .titulos p{
+    text-align: center;
+    padding: 1rem;
+}
+
+#cardapio {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 9rem;
+}
+
+.sabores {
+    display: flex;
+    flex-flow: column wrap;
+    width: calc(100% / 3);
+    padding: 1rem;
+}
+
+.sabor img {
+    padding: 1rem;
+}
+
+.sabores div {
+    text-align: center;
+}
+
+.precos {
+    display: flex;
+    font-size: 0.8em;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.precos div {
+    background: rgb(180, 61, 61);
+    font-weight: 500;
+    color: rgb(208, 163, 48);
+    padding: 0.5rem;
+}
+
+.ingrediente {
+    font-weight: normal;
+    font-size: 0.7em;
+    line-height: 2rem;
+}
+
+@media (max-width: 1024px) {
+    #cardapio {
+        justify-content: center;
+    }
+    
+    .sabores {
+        width: calc(100% / 2);
+    }
+}
+
+@media (max-width: 768px) {
+    .sabores {
+        padding: 3rem;
+        width: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .titulos p {
+        display: none;
+    }
+
+    .titulos {
+        margin: 5rem;
+    }
+}
