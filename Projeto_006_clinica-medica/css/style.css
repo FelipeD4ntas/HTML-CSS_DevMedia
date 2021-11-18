@@ -49,7 +49,6 @@
     /*  Fim MENU */
     
     #home {
-        width: 100%;
         height: 100vh;
         background-image: url('../assets/recepcao.png');
         background-size: cover;
@@ -73,12 +72,12 @@
         width: 50%;
         text-align: center;
         color: #7a746e;
-        margin: 40px auto 10px auto;
+        margin: 30px auto 10px auto;
     }
     
     .artigo h2 {
         font-size: 3rem;
-        padding: 20px;
+        padding: 10px;
     }
     
     .artigo p {
@@ -113,3 +112,57 @@
         list-style-position: inside;
         color: #7a746e;
     }
+
+    .box-funcoes {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .funcoes {
+       width: 28%;
+       box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.425);
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .funcoes figcaption {
+        padding: 20px;
+        color: #7a746e;
+        font-size: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .box-horarios {
+        display: flex;
+        justify-content: center;
+    }
+
+    .horarios {
+        display: inline-block;
+        background: #00CAD1;
+        padding: 15px;
+        margin-top: 30px;
+    }
+
+    .horarios a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 15px;
+    }
+    .mapa {
+        max-width: 100%;
+        padding: 20px;
+    }
+    .mapa iframe {
+        width: 100%;
+    }
+
+  
