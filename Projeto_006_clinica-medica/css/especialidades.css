@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.box-topo {
+    width: 70%;
+    text-align: center;
+    color: var(--cor_font);
+    margin: 20px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.link-especialidades {
+    text-decoration: none;
+    color: var(--cor_font);
+}

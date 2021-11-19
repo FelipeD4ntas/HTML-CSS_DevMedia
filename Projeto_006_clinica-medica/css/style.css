@@ -1,97 +1,236 @@
-    @charset "UTF-8";
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: var(--font_princ);
-    }
-    
-    html {
-        font-size: 62.5%;
-    }
-    
-    body {
-        font-size: 1.6rem;
-    }
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font_princ);
+}
 
-    :root {
-        --cor_font: #0000008c;
-        --cor_topo: #00CAD1;
-        --cor_rodape: #0C6E71;
-        --font_princ: 'Source Sans Pro', sans-serif;
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+ :root {
+    --cor_font: #0000008c;
+    --cor_topo: #00CAD1;
+    --cor_rodape: #0C6E71;
+    --font_princ: 'Source Sans Pro', sans-serif;
+}
+
+header {
+    max-width: 100%;
+    padding: 0px 20px;
+    background: var(--cor_topo);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    margin: 10px;
+}
+
+.link-menu {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.575);
+}
+
+.link-menu:hover {
+    color: var(--cor_rodape);
+    text-shadow: 0px 0px 0px transparent;
+    transition: color 0.3s;
+}
+
+
+/*  Fim MENU */
+
+#home {
+    height: 100vh;
+    background-image: url('../assets/recepcao.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#home h1 {
+    font-weight: normal;
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.575);
+    padding: 20px;
+    color: white;
+}
+
+
+/* Fim HOME */
+
+.artigo {
+    width: 70%;
+    text-align: center;
+    color: var(--cor_font);
+    margin: 30px auto 10px auto;
+}
+
+.artigo h2 {
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.artigo p {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.box-vantagens {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+
+.vantagens h2 {
+    font-size: 2.5rem;
+    padding: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--cor_font);
+}
+
+.vantagens ul {
+    padding-left: 5rem;
+}
+
+.vantagens ul li {
+    font-size: 2rem;
+    font-weight: normal;
+    list-style-position: inside;
+    color: var(--cor_font);
+}
+
+.box-funcoes {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.funcoes {
+    width: 28%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.425);
+}
+
+.img {
+    width: 100%;
+}
+
+.funcoes figcaption {
+    padding: 20px;
+    color: var(--cor_font);
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.box-horarios {
+    display: flex;
+    justify-content: center;
+}
+
+.horarios {
+    display: inline-block;
+    background: var(--cor_topo);
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.horarios a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 15px;
+}
+
+.horarios .link:hover {
+    color: var(--cor_rodape);
+}
+
+.mapa {
+    max-width: 100%;
+    padding: 0px 20px;
+}
+
+.mapa iframe {
+    width: 100%;
+}
+
+
+/* Fim SOBRE */
+
+footer {
+    background: var(--cor_rodape);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.info-rodape p,
+.link {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.info-rodape .link:hover {
+    color: var(--cor_topo);
+}
+
+@media (max-width: 768px) {
+    .logo {
+        padding: 0px;
     }
-    
-    header {
-        max-width: 100%;
-        padding: 0px 20px;
-        background: var(--cor_topo);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+    .img-topo {
+        height: 70px;
     }
-    
-    .menu {
-        list-style-type: none;
-        display: flex;
-        flex-wrap: wrap;
+    .link-menu {
+        font-size: 1.8rem;
     }
-    
-    .menu li {
-        margin: 10px;
-    }
-    
-    .menu li a {
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        font-size: 2rem;
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.575);
-    }
-    
-    .menu li a:hover {
-        color: var(--cor_rodape);
-        text-shadow: 0px 0px 0px transparent;
-        transition: color 0.3s;
-    }
-    /*  Fim MENU */
-    
     #home {
-        height: 100vh;
-        background-image: url('../assets/recepcao.png');
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        height: 90vh;
     }
-    
     #home h1 {
-        font-weight: normal;
-        font-size: 5rem;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.575);
-        padding: 20px;
-        color: white;
+        font-size: 3.5rem;
     }
-    /* Fim HOME */
-    
     .artigo {
-        width: 70%;
-        text-align: center;
-        color: var(--cor_font);
-        margin: 30px auto 10px auto;
+        width: 75%;
     }
-    
     .artigo h2 {
-        font-size: 3rem;
-        padding: 10px;
+        font-size: 2.5rem;
     }
-    
     .artigo p {
-        font-size: 2rem;
-        padding: 10px;
+        font-size: 1.5rem;
     }
-    
     .box-vantagens {
         display: flex;
         flex-wrap: wrap;
@@ -99,41 +238,91 @@
         justify-content: center;
         margin: 0px auto;
     }
-    
+    .vantagens img {
+        display: none;
+    }
     .vantagens h2 {
-        font-size: 2.5rem;
-        padding: 20px;
-        font-weight: normal;
-        text-transform: uppercase;
-        color: var(--cor_font);
-    }
-    
-    .vantagens ul {
-        padding-left: 5rem;
-    }
-    
-    .vantagens ul li {
         font-size: 2rem;
-        font-weight: normal;
-        list-style-position: inside;
-        color: var(--cor_font);
     }
-
+    .vantagens ul li {
+        font-size: 1.5rem;
+    }
     .box-funcoes {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
-
     .funcoes {
-        width: 28%;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.425);
+        width: 40%;
+        margin-bottom: 40px;
     }
+    .funcoes:last-child {
+        margin-bottom: 0;
+    }
+}
 
-    .img {
+@media (max-width: 480px) {
+    header {
+        justify-content: center;
+        padding: 0px;
+    }
+    .img-topo {
+        padding-top: 20px
+    }
+    .box-menu {
+        width: 90%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #1bb4b9;
+    }
+    .menu {
         width: 100%;
+        justify-content: space-around;
     }
-
+    .menu li {
+        margin: 0px;
+    }
+    #home {
+        height: 55vh;
+    }
+    #home h1 {
+        font-size: 2.2rem;
+    }
+    .artigo {
+        width: 85%;
+    }
+    .artigo h2 {
+        font-size: 1.6rem;
+    }
+    .artigo p,
+    .vantagens ul li {
+        font-size: 1rem;
+    }
+    .box-vantagens {
+        width: 85%;
+    }
+    .vantagens h2 {
+        font-size: 1.2rem;
+        padding: 20px 10px;
+    }
+    .box-funcoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .funcoes {
+        width: 85%;
+        margin-bottom: 40px;
+    }
+    .funcoes figcaption {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    .horarios a {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
     .funcoes figcaption {
         padding: 20px;
         color: var(--cor_font);
@@ -141,225 +330,11 @@
         text-align: center;
         text-transform: uppercase;
     }
-
-    .box-horarios {
-        display: flex;
-        justify-content: center;
+    .img-rodape {
+        height: 50px;
     }
-
-    .horarios {
-        display: inline-block;
-        background: var(--cor_topo);
-        padding: 15px;
-        margin-top: 30px;
+    .info-rodape p,
+    a {
+        font-size: 1rem;
     }
-
-    .horarios a {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: white;
-        font-weight: bold;
-        font-size: 2rem;
-        padding: 15px;
-    }
-
-    .mapa {
-        max-width: 100%;
-       padding: 0px 20px;
-      
-    }
-
-    .mapa iframe {
-        width: 100%;
-    }
-
-    /* Fim SOBRE */
-
-    footer {
-        background: var(--cor_rodape);
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        margin-top: 50px;
-    }
-
-    .info-rodape p, a {
-        text-align: center;
-        text-decoration: none;
-        color: white;
-        font-size: 2rem;
-        padding: 10px;
-    }
-  
-    .link:hover {
-        color: rgb(235, 235, 235);
-    }
-
-    @media (max-width: 768px) {
-        header a {
-            padding: 0px;
-        }
-
-        .img-topo {
-            height: 70px;
-        }
-
-        .menu li a {
-            font-size: 1.8rem;
-        }
-        
-        #home {
-            height: 90vh;
-
-        }
-
-        #home h1 {
-            font-size: 3.5rem;
-        }
-
-        .artigo {
-            width: 75%;
-        }
-
-        .artigo h2 {
-            font-size: 2.5rem;
-        }
-        
-        .artigo p {
-            font-size: 1.5rem;
-        }
-
-        .box-vantagens {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            margin: 0px auto;
-        }
-
-        .vantagens img {
-            display: none;
-        }
-        
-        .vantagens h2 {
-            font-size: 2rem;
-        }
-
-        .vantagens ul li {
-            font-size: 1.5rem;
-        }
-
-        .box-funcoes {
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-        }
-    
-        .funcoes {
-            width: 40%;
-            margin-bottom: 40px;
-        }
-
-        .funcoes:last-child {
-            margin-bottom: 0;
-        }
-    }
-
-    @media (max-width: 425px) {
-        header {
-            justify-content: center;
-            padding: 0px;
-        }
-
-        .img-topo {
-            padding-top: 20px
-        }
-
-        .box-menu {
-            width: 90%;
-            padding: 10px;
-            display: flex;
-            justify-content: center;
-            border-top: 1px solid #1bb4b9;
-        }
-
-        .menu {
-            width: 100%;
-            justify-content: space-around;
-        }
-
-        .menu li {
-            margin: 0px;
-        }
-
-        #home {
-            height: 55vh;
-
-        }
-
-        #home h1 {
-            font-size: 2.5rem;
-        }
-
-        .artigo {
-            width: 85%;
-        }
-
-        .artigo h2 {
-            font-size: 1.6rem;
-        }
-        
-        .artigo p, .vantagens ul li {
-            font-size: 1rem;
-        }
-
-        .box-vantagens {
-            width: 85%;
-        }
-
-        .vantagens h2 {
-            font-size: 1.2rem;
-           padding: 20px 10px;
-        }
-        
-        .box-funcoes {
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-        }
-    
-        .funcoes {
-            width: 85%;
-            margin-bottom: 40px;
-        }
-
-        .funcoes figcaption {
-            padding: 10px;
-            font-size: 1.5rem;
-        }
-    
-        .horarios a {
-            font-size: 1.5rem;
-            padding: 10px;
-        }
-
-        .funcoes figcaption {
-            padding: 20px;
-            color: var(--cor_font);
-            font-size: 2rem;
-            text-align: center;
-            text-transform: uppercase;
-        }
-        
-        .img-rodape {
-            height: 50px;
-        }
-
-        .info-rodape p, a {
-            font-size: 1rem;
-        }
-      
-    }
-    
+}
