@@ -104,7 +104,7 @@ header {
     margin: 0px auto;
 }
 
-.vantagens h2 {
+.vantagens h3 {
     font-size: 2.5rem;
     padding: 20px;
     font-weight: normal;
@@ -241,9 +241,10 @@ footer {
     .vantagens img {
         display: none;
     }
-    .vantagens h2 {
+    .vantagens h3 {
         font-size: 2rem;
     }
+   
     .vantagens ul li {
         font-size: 1.5rem;
     }
@@ -283,6 +284,11 @@ footer {
     .menu li {
         margin: 0px;
     }
+
+    .link-menu {
+        font-size: 1.5rem;
+    }
+
     #home {
         height: 55vh;
     }
@@ -290,21 +296,26 @@ footer {
         font-size: 2.2rem;
     }
     .artigo {
-        width: 85%;
+        width: 90%;
     }
     .artigo h2 {
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
     .artigo p,
     .vantagens ul li {
-        font-size: 1rem;
-    }
-    .box-vantagens {
-        width: 85%;
-    }
-    .vantagens h2 {
         font-size: 1.2rem;
+    }
+
+    
+    .box-vantagens {
+        width: 90%;
+    }
+    .vantagens h3 {
+        font-size: 1.3rem;
         padding: 20px 10px;
+    }
+    .vantagens ul {
+        padding-left: 0.5rem;
     }
     .box-funcoes {
         display: flex;
@@ -334,7 +345,7 @@ footer {
         height: 50px;
     }
     .info-rodape p,
-    a {
-        font-size: 1rem;
+    .link {
+        font-size: 1.1rem;
     }
 }
