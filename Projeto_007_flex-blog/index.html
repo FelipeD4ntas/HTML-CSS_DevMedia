@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF- 8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Flex Blog</title>
+    <title>FlexBlog</title>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
         </section>
         <section class="box-menu">
             <nav>
-                <h3>FlexBlog</h3>
+                <a href="#" class="link logo">FlexBlog</a>
                 <ul>
                     <li>
                         <a href="#" rel="next" target="_self" class="link">Sobre</a>
@@ -46,54 +46,60 @@
 
     <main>
         <section class="titulo-principal">
-            <h1>Novos valores e Propriedades de CSS</h1>
+            <h1 class="titulo">Novos valores e<br>Propriedades de CSS</h1>
         </section>
 
         <section id="sobre">
             <article class="artigo-sobre">
-                <h2>Sobre</h2>
+                <h2 class="subtitulo">Sobre</h2>
                 <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
                 <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente apropriadas objetivos.</p>
             </article>
-            <div>
+            <div class="img-sobre">
                 <img src="img/sobre1.jpg" alt="Mulher na janela">
+            </div>
+            <div class="img-sobre">
                 <img src="img/sobre2.jpg" alt="Pintura com píncel">
             </div>
         </section>
 
         <section id="produtos">
-            <figure>
-                <figcaption>
-                    <h2 class="desc">Purple</h2>
-                </figcaption>
-                <img src="img/produtos1.jpg" alt="Equipamentos de cozinha">
-            </figure>
-            <figure>
-                <figcaption>
-                    <h2 class="desc">Pink</h2>
-                </figcaption>
-                <img src="img/produtos2.jpg" alt="Equipamentos de camping">
-            </figure>
-            <figure>
-                <figcaption>
-                    <h2 class="desc">Blue</h2>
-                </figcaption>
-                <img src="img/produtos3.jpg" alt="Equipamentos de Jardinagem">
-            </figure>
+            <h2 class="subtitulo">Produtos</h2>
+            <div class="box-img-produto">
+                <figure class="produtos-item purple">
+                    <figcaption>
+                        <h3 class="desc">Purple</h3>
+                    </figcaption>
+                    <img src="img/produtos1.jpg" alt="Equipamentos de cozinha">
+                </figure>
+                <figure class="produtos-item pink">
+                    <figcaption>
+                        <h3 class="desc">Pink</h3>
+                    </figcaption>
+                    <img src="img/produtos2.jpg" alt="Equipamentos de camping">
+                </figure>
+                <figure class="produtos-item blue">
+                    <figcaption>
+                        <h3 class="desc">Blue</h3>
+                    </figcaption>
+                    <img src="img/produtos3.jpg" alt="Equipamentos de Jardinagem">
+                </figure>
+            </div>
         </section>
 
         <section id="preco">
             <div class="card-preco cobre">
                 <div>
-                    <h2 class="desc">Cobre</h2>
+                    <h3 class="desc">Cobre</h3>
                 </div>
-                <div>
+                <div class="valor">
                     <p><sup>R$</sup>19</p>
                 </div>
-                <div>
+                <div class="vantagens">
                     <ul>
                         <li>Planos Ilimitados</li>
                         <li>Acesso Restrito</li>
+                        <li>Conteúdo Secreto</li>
                         <li>Suporte 24h</li>
                     </ul>
                 </div>
@@ -104,15 +110,16 @@
 
             <div class="card-preco prata">
                 <div>
-                    <h2 class="desc">Prata</h2>
+                    <h3 class="desc">Prata</h3>
                 </div>
-                <div>
+                <div class="valor">
                     <p><sup>R$</sup>39</p>
                 </div>
-                <div>
+                <div class="vantagens">
                     <ul>
                         <li>Planos Ilimitados</li>
                         <li>Acesso Restrito</li>
+                        <li>Conteúdo Secreto</li>
                         <li>Suporte 24h</li>
                         <li>Compra Exclusiva</li>
                     </ul>
@@ -124,15 +131,16 @@
 
             <div class="card-preco ouro">
                 <div>
-                    <h2 class="desc">Ouro</h2>
+                    <h3 class="desc">Ouro</h3>
                 </div>
-                <div>
+                <div class="valor">
                     <p><sup>R$</sup>79</p>
                 </div>
-                <div>
+                <div class="vantagens">
                     <ul>
                         <li>Planos Ilimitados</li>
                         <li>Acesso Restrito</li>
+                        <li>Conteúdo Secreto</li>
                         <li>Suporte 24h</li>
                         <li>Compra Exclusiva</li>
                         <li>Download dos Itens</li>
@@ -145,40 +153,40 @@
         </section>
 
         <section id="qualidade">
-            <div>
+            <div class="item-qualidade">
                 <h3 class="desc qualidade">Inteligente</h3>
                 <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
             </div>
-            <div>
+            <div class="item-qualidade">
                 <h3 class="desc qualidade">Compacto</h3>
                 <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</p>
             </div>
-            <div>
+            <div class="item-qualidade">
                 <h3 class="desc qualidade">Econômico</h3>
                 <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
             </div>
-            <div>
+            <div class="item-qualidade">
                 <h3 class="desc qualidade">Transparente</h3>
                 <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
             </div>
-            <div>
+            <div class="item-qualidade">
                 <h3 class="desc qualidade">Opaco</h3>
                 <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão das condições inegavelmente</p>
             </div>
-            <div>
+            <div class="item-qualidade">
                 <h3 class="desc qualidade">Sustentável</h3>
                 <p>O que temos que ter sempre em mente é que a determinação clara de objetivos afeta positivamente a correta previsão</p>
             </div>
         </section>
 
         <section id="contato">
-            <div>
+            <div class="contato-info">
                 <h2 class="desc">Newsletter</h2>
                 <p>assine e fique por dentro das novidades</p>
             </div>
             <form action="#" method="post">
                 <input type="email" maxlength="30" id="email" name="user_email" placeholder="Seu e-mail">
-                <input type="button" value="enviar" id="enviar">
+                <button type="submit">Assinar</button>
             </form>
         </section>
     </main>
