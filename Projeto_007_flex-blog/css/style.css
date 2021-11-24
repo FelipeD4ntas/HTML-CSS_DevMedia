@@ -252,43 +252,41 @@ nav ul .link:hover {
 
 .item-qualidade {
     flex: 1 1 300px;
-    margin: 10px;
-    padding-top: 20px;
+    margin: 20px 10px;
 }
 
 .desc-qualidade {
     color: #A4A4A4;
-    font-size: 2.2em;
+    font-size: 2.25em;
     text-align: left;
     padding-bottom: 20px;
-    display: flex;
-    align-items: center;
+    
 }
 
-.desc-qualidade.purple::before {
+.item-qualidade:nth-of-type(3n+1) .desc-qualidade::before {
     content: '';
     height: 35px;
     width: 8px;
     background: #AE81FF;
-    display: block;
+    display: inline-block;
     margin-right: 10px;
 }
 
-.desc-qualidade.pink::before {
+.item-qualidade:nth-of-type(3n+2) .desc-qualidade::before {
     content: '';
     height: 30px;
     width: 8px;
     background: #F9265E;
-    display: block;
+    display: inline-block;
     margin-right: 10px;
 }
 
-.desc-qualidade.blue::before {
+.item-qualidade:nth-of-type(3n+3) .desc-qualidade::before {
     content: '';
     height: 30px;
     width: 8px;
     background: #66D9EB;
-    display: block;
+    display: inline-block;
     margin-right: 10px;
 }
 
@@ -299,22 +297,21 @@ nav ul .link:hover {
 }
 
 #contato {
-    background: #f7f7f7;
+    
 }
 
-.box-contato-info {
-    max-width: 960px;
-    margin: 0 auto;
+#contato {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 50px 0;
+    padding: 60px calc((100% - 960px) / 2);
+    background: #f7f7f7;
 }
 
 .contato-info p {
     font-size: 1.25em;
     font-style: italic;
+    line-height: 1.4;
     color: #7C7C7C;
 }
 
@@ -341,19 +338,22 @@ form {
 form input {
     padding: 15px 10px;
     font-size: 1.25em;
+    font-style: italic;
     border: 4px solid #2c70ff;
-    flex: 1 1 260px;
-    background: #f7f7f7;
+    flex: 3 1 260px;
+    background: transparent;
+    border-radius: 0px;
 }
 
 form button {
     padding: 15px 10px;
-    font-size: 2.2em;
+    font-size: 2.25em;
     font-weight: bold;
     text-transform: uppercase;
     color: white;
     background: #2c70ff;
     flex: 1 1 260px;
+    cursor: pointer;
 }
 
 footer {
@@ -389,7 +389,6 @@ footer p {
 
 @media (max-width: 600px) {
     form button {
-        padding: 15px 10px;
         font-size: 1.5em;
     }
 }
