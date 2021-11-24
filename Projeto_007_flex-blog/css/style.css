@@ -88,7 +88,7 @@ nav ul .link:hover {
 
 .titulo {
     font-size: 3em;
-    line-height: 1;   
+    line-height: 1;
 }
 
 #sobre {
@@ -226,16 +226,149 @@ nav ul .link:hover {
     background: #2C70FF;
 }
 
-.card-preco button {
+.card-preco .botao {
+    border: 4px solid #222222;
+    background: #F7F7F7;
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+}
+
+.botao button {
     text-transform: uppercase;
     font-size: 2.25em;
     font-weight: bold;
     padding: 15px;
-    border: 4px solid #222222;
     background: #F7F7F7;
     width: 100%;
-    margin: 20px auto;
+}
+
+#qualidade {
+    max-width: 960px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-qualidade {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding-top: 20px;
+}
+
+.desc-qualidade {
+    color: #A4A4A4;
+    font-size: 2.2em;
+    text-align: left;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.desc-qualidade.purple::before {
+    content: '';
+    height: 35px;
+    width: 8px;
+    background: #AE81FF;
     display: block;
+    margin-right: 10px;
+}
+
+.desc-qualidade.pink::before {
+    content: '';
+    height: 30px;
+    width: 8px;
+    background: #F9265E;
+    display: block;
+    margin-right: 10px;
+}
+
+.desc-qualidade.blue::before {
+    content: '';
+    height: 30px;
+    width: 8px;
+    background: #66D9EB;
+    display: block;
+    margin-right: 10px;
+}
+
+.item-qualidade p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    color: #7C7C7C;
+}
+
+#contato {
+    background: #f7f7f7;
+}
+
+.box-contato-info {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.contato-info p {
+    font-size: 1.25em;
+    font-style: italic;
+    color: #7C7C7C;
+}
+
+.desc-contato {
+    color: #A4A4A4;
+    font-size: 3em;
+    text-align: left;
+}
+
+.contato-info {
+    flex: 1 1 240px;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+form {
+    flex: 2 1 260px;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+
+form input {
+    padding: 15px 10px;
+    font-size: 1.25em;
+    border: 4px solid #2c70ff;
+    flex: 1 1 260px;
+    background: #f7f7f7;
+}
+
+form button {
+    padding: 15px 10px;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background: #2c70ff;
+    flex: 1 1 260px;
+}
+
+footer {
+    background: #2c70ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #122ab2;
+    font-size: 2.25em;
+    padding: 75px;
+    text-align: center;
+    flex: 1;
 }
 
 @media (max-width: 800px) {
@@ -243,16 +376,20 @@ nav ul .link:hover {
         padding-left: 10px;
         padding-right: 10px;
     }
-
     .ouro {
         order: -1;
     }
-
     .prata {
         order: 0;
     }
-
     .cobre {
         order: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    form button {
+        padding: 15px 10px;
+        font-size: 1.5em;
     }
 }
