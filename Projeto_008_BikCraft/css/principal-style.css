@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
 /* reset */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: none;
-    font-family: Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -27,6 +28,7 @@ img {
     border-radius: 5px;
 }
 
+
 /*body::-webkit-scrollbar { 
     display: none; 
 }*/
@@ -40,10 +42,11 @@ img {
     --cor06: #595959;
 }
 
+
 /* HEADER */
+
 header {
     background: var(--cor01);
-    
 }
 
 .box-menu {
@@ -80,27 +83,33 @@ header {
     margin-top: 4px;
     transition: 0.3s;
     position: absolute;
-   
 }
-    
+
 .list-menu a:hover::after {
     width: 100%;
 }
 
+
 /* INTRODUÇÃO */
+
 .introducao {
-    background: var(--cor01) url('../img/icones/bottom-left.svg') no-repeat left 20px bottom 20px;
+    background: var(--cor01) url('../img/icones/bottom-left.svg') no-repeat left 20px bottom 30px;
     padding: 0px calc((100% - 1200px) / 2);
 }
 
 .box-introducao {
     display: flex;
-    height: 100vh;
+    max-height: 580px;
+}
+
+.img-intro {
+    min-height: 580px;
+    object-fit: cover;
 }
 
 .intro-item {
     padding: 0 20px;
-    flex: 1 1 300px;
+    flex: 1 1 360px;
 }
 
 .intro-artigo {
@@ -137,22 +146,24 @@ header {
 .botao {
     width: 100%;
     background: transparent;
-    padding: 16px 32px;
-    font-size: 1.125em;
+    padding: 16px;
     border-radius: 5px;
+    font-size: 1.125em;
 }
 
 .botao a {
     color: var(--cor05);
-    font-weight: bold;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .botao:hover {
     background-image: linear-gradient(var(--cor04), #F2A50C);
 }
 
+
 /* ESCOLHA */
+
 .escolha {
     margin: 179px 0;
 }
@@ -160,7 +171,8 @@ header {
 .titulo-preto {
     font-size: 4em;
     text-transform: lowercase;
-    margin: 40px;
+    margin: 20px;
+    padding: 0px calc((100% - 1200px) / 2);
 }
 
 .ponto:after {
@@ -176,6 +188,8 @@ header {
     display: flex;
     padding: 0 20px 20px 20px;
     overflow-x: auto;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .item-escolha {
