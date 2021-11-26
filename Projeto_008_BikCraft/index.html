@@ -6,12 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente.">
     <link rel="shortcut icon" href="img/icones/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/principal-style.css" type="text/css">
     <title>Bikcraft - Bicicletas Elétricas</title>
-    <style>
-        body {
-            background-color: paleturquoise;
-        }
-    </style>
 </head>
 
 <body>
@@ -33,12 +29,16 @@
     <main>
         <section class="introducao">
             <div class="box-introducao">
-                <div>
+                <div class="intro-item intro-artigo">
                     <h1 class="ponto">Bicicletas feitas sob medida</h1>
                     <p>Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para você. Explore o mundo na sua velocidade com a Bikcraft.</p>
-                    <a href="#" target="_self" rel="next">Escolha a sua</a>
+                    <div class="box-botao">
+                        <button type="button" class="botao">
+                            <a href="#" target="_self" rel="next">Escolha a sua</a>
+                        </button>
+                    </div>
                 </div>
-                <div>
+                <div class="intro-item">
                     <picture>
                         <source media="(max-width: 800px)" srcset="img\nimbus.jpg" type="">
                         <img src="img/introducao.jpg" alt="Bike">
@@ -49,41 +49,42 @@
 
         <section class="escolha">
             <h1 class="titulo-preto ponto">Escolha a sua</h1>
+            <div class="box-itens-escolha">
+                <div class="item-escolha">
+                    <a href="#" target="_self" rel="next">
+                        <div class="img-escolha">
+                            <img src="img/magic-home.jpg" alt="Bike Magic">
+                        </div>
+                        <div class="desc-img">
+                            <h2 class="titulo-link">Magic Might</h2>
+                            <p class="preco-link">R$ 2499</p>
+                        </div>
+                    </a>
+                </div>
 
-            <div class="item-escolha">
-                <a href="#" target="_self" rel="next">
-                    <div class="img-escolha">
-                        <img src="img/magic-home.jpg" alt="Bike Magic">
-                    </div>
-                    <div class="desc-img">
-                        <h2 class="titulo-link">Magic Might</h2>
-                        <p class="preco-link">R$ 2499</p>
-                    </div>
-                </a>
-            </div>
+                <div class="item-escolha">
+                    <a href="#" target="_self" rel="next">
+                        <div class="img-escolha">
+                            <img src="img/nimbus-home.jpg" alt="Bike Nimbus">
+                        </div>
+                        <div class="desc-img">
+                            <h2 class="titulo-link">Nimbus Stark</h2>
+                            <p class="preco-link">R$ 4999</p>
+                        </div>
+                    </a>
+                </div>
 
-            <div class="item-escolha">
-                <a href="#" target="_self" rel="next">
-                    <div class="img-escolha">
-                        <img src="img/nimbus-home.jpg" alt="Bike Nimbus">
-                    </div>
-                    <div class="desc-img">
-                        <h2 class="titulo-link">Nimbus Stark</h2>
-                        <p class="preco-link">R$ 4999</p>
-                    </div>
-                </a>
-            </div>
-
-            <div class="item-escolha">
-                <a href="#" target="_self" rel="next">
-                    <div class="img-escolha">
-                        <img src="img/nebula-home.jpg" alt="Bike Nebula">
-                    </div>
-                    <div class="desc-img">
-                        <h2 class="titulo-link">Nebula Cosmic</h2>
-                        <p class="preco-link">R$ 3999</p>
-                    </div>
-                </a>
+                <div class="item-escolha">
+                    <a href="#" target="_self" rel="next">
+                        <div class="img-escolha">
+                            <img src="img/nebula-home.jpg" alt="Bike Nebula">
+                        </div>
+                        <div class="desc-img">
+                            <h2 class="titulo-link">Nebula Cosmic</h2>
+                            <p class="preco-link">R$ 3999</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -159,12 +160,68 @@
             <div class="prata">
                 <h2>Prata</h2>
                 <p>R$ 199 <span>mensal</span></p>
+                <ul>
+                    <li>Duas trocas por ano</li>
+                    <li>Assistência técnica</li>
+                    <li>Suporte 08h às 18h</li>
+                    <li>Cobertura estadual</li>
+                </ul>
+                <button type="button">
+                    <a href="#" target="_self" rel="next" class="botao prata">Inscreva-se</a>
+                </button>
+            </div>
+
+            <div class="ouro">
+                <h2>Ouro</h2>
+                <p>R$ 299 <span>mensal</span></p>
+                <ul>
+                    <li>Cinco trocas por ano</li>
+                    <li>Assistência especial</li>
+                    <li>Suporte 24h</li>
+                    <li>Cobertura nacional</li>
+                    <li>Desconto em parceiros</li>
+                    <li>Acesso ao Clube Bikcraft</li>
+                </ul>
+                <button type="button">
+                    <a href="#" target="_self" rel="next" class="botao ouro">Inscreva-se</a>
+                </button>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <div>
+            <img src="img/icones/bikcraft.svg" alt="Logo Bikcraft">
+        </div>
+        <div>
+            <h3>Contato</h3>
+            <a href="tel:+55219999-9999">+55 21 9999-9999</a>
+            <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+            <p>Rua Ali Perto, 42 - Botafogo Rio de Janeiro - RJ</p>
+            <a href="#" target="_blank" rel="external">
+                <img src="img/icones/instagram.svg" alt="instagram">
+            </a>
+            <a href="#" target="_blank" rel="external">
+                <img src="img/icones/facebook.svg" alt="facebook">
+            </a>
+            <a href="#" target="_blank" rel="external">
+                <img src="img/icones/youtube.svg" alt="youtube">
+            </a>
+        </div>
+        <div>
+            <h3>Informações</h3>
+            <nav>
+                <ul class="list-menu-rodape">
+                    <li><a href="#" target="_self" rel="next">Bicicletas</a></li>
+                    <li><a href="#" target="_self" rel="next">Seguros</a></li>
+                    <li><a href="#" target="_self" rel="next">Contato</a></li>
+                    <li><a href="#" target="_self" rel="next">Termos e Condições</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <p>Bikcraft &copy; Alguns direitos reservados.</p>
+        </div>
     </footer>
 </body>
 
