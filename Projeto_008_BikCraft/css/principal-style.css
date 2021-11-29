@@ -40,6 +40,7 @@ img {
     --cor04: #FFBB00;
     --cor05: #332200;
     --cor06: #595959;
+    --cor07: #111111;
 }
 
 
@@ -228,4 +229,122 @@ header {
     font-size: 1.125em;
     color: var(--cor06);
     margin-left: 24px;
+}
+
+/* TECNOLOGIA */
+
+.tecnologia {
+    background: var(--cor07);
+}
+
+.box-tecnologia {
+    display: flex;
+    max-width: 1200px;
+    max-height: 940px;
+    margin: 0 auto;
+}
+
+.tec-artigo {
+    margin: 80px 20px;
+    flex: 1 1 300px;
+}
+
+.box-tec-img {
+    margin-right: 20px;
+    flex: 1 1 300px;
+    position: relative;
+    height: 1100px;
+}
+
+.tec-img {
+    height: 100%;
+    position: absolute;
+    top: -80px;
+    bottom: -20%;
+}
+
+.tec-artigo span {
+    display: block;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--cor03);
+    padding-bottom: 20px; 
+}
+
+.tec-artigo p {
+    font-size: 1.5em;
+    color: var(--cor03);
+    padding-bottom: 20px;
+}
+
+
+.link-tec  {
+    display: inline-block;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: var(--cor04);
+    
+}
+
+.link-tec::after  {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-top: 4px;
+    background: currentColor;
+    
+}
+
+.link-tec:hover {
+    color: var(--cor02);
+}
+
+.titulo-branco {
+    font-size: 4em;
+    color: var(--cor02);
+    padding-bottom: 30px;
+}
+
+.box-tec-vantagem {
+    display: flex;
+    margin-top: 80px;
+}
+
+.tec-vantagem {
+    min-width: 270px;
+    flex: 1;
+}
+
+.tec-vantagem:first-child {
+    padding-right: 15px;
+}
+
+.tec-vantagem:last-child {
+    padding-left: 15px;
+}
+
+.tec-vantagem img {
+    width: 25px;
+}
+
+
+.tec-vantagem h3 {
+    font-size: 1.125em;
+    font-weight: 500;
+    color: var(--cor02);
+    padding: 10px 0;
+}
+
+.tec-vantagem p {
+    padding-bottom: 0px;
+    font-size: 1em;
+}
+
+
+/* PARCEIROS */ 
+
+.parceiros {
+    margin: 140px 0;
 }
