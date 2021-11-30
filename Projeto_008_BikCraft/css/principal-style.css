@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 /* reset */
@@ -10,6 +9,14 @@
     padding: 0;
     border: none;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6em;
 }
 
 a {
@@ -76,7 +83,7 @@ header {
 .list-menu a {
     display: inline-block;
     color: var(--cor02);
-    font-size: 1.125em;
+    font-size: 1.8rem;
     position: relative;
 }
 
@@ -118,7 +125,7 @@ header {
 
 .intro-item {
     padding: 0 20px;
-    flex: 1 1 363px;
+    flex: 1 1 50%;
 }
 
 .intro-artigo {
@@ -127,7 +134,7 @@ header {
 }
 
 .intro-artigo h1 {
-    font-size: 4em;
+    font-size: 6.4rem;
     color: var(--cor02);
     padding: 30px 0;
 }
@@ -142,7 +149,7 @@ header {
 }
 
 .intro-artigo p {
-    font-size: 1.5em;
+    font-size: 2.4rem;
     color: var(--cor03);
     padding-bottom: 20px;
 }
@@ -158,7 +165,7 @@ header {
     background: transparent;
     padding: 16px;
     border-radius: 5px;
-    font-size: 1.125em;
+    font-size: 1.8rem;
 }
 
 .botao a {
@@ -179,7 +186,7 @@ header {
 }
 
 .titulo-preto {
-    font-size: 4em;
+    font-size: 6.4rem;
     text-transform: lowercase;
     margin: 0 20px 40px 20px;
     padding: 0px calc((100% - 1200px) / 2);
@@ -213,7 +220,7 @@ header {
 }
 
 .desc-img h2 {
-    font-size: 2em;
+    font-size: 3.2rem;
     color: var(--cor01);
     margin: 10px 0;
     display: flex;
@@ -235,7 +242,7 @@ header {
 }
 
 .desc-img p {
-    font-size: 1.125em;
+    font-size: 1.8rem;
     color: var(--cor06);
     margin-left: 24px;
 }
@@ -271,7 +278,7 @@ header {
 
 .tec-artigo span {
     display: block;
-    font-size: 1.5em;
+    font-size: 2.4rem;
     font-weight: normal;
     text-transform: uppercase;
     color: var(--cor03);
@@ -279,14 +286,14 @@ header {
 }
 
 .tec-artigo p {
-    font-size: 1.5em;
+    font-size: 2.4rem;
     color: var(--cor03);
     padding-bottom: 20px;
 }
 
 .link-tec {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 2.4em;
     text-transform: uppercase;
     color: var(--cor04);
 }
@@ -305,7 +312,7 @@ header {
 }
 
 .titulo-branco {
-    font-size: 4em;
+    font-size: 6.4rem;
     color: var(--cor02);
     padding-bottom: 30px;
 }
@@ -330,7 +337,7 @@ header {
 }
 
 .tec-vantagem h3 {
-    font-size: 1.125em;
+    font-size: 1.8rem;
     font-weight: 500;
     color: var(--cor02);
     padding: 10px 0;
@@ -338,7 +345,7 @@ header {
 
 .tec-vantagem p {
     padding-bottom: 0px;
-    font-size: 1em;
+    font-size: 1.6rem;
 }
 
 
@@ -364,12 +371,13 @@ header {
     border-bottom: 2px solid #b2b2b25d;
 }
 
-.item-parceiro:nth-of-type(n + 5) {
+.item-parceiro:nth-of-type(n+5) {
     border-right: 2px solid #b2b2b25d;
     border-bottom: none;
 }
 
-.item-parceiro:nth-of-type(8), .item-parceiro:nth-of-type(4) {
+.item-parceiro:nth-of-type(8),
+.item-parceiro:nth-of-type(4) {
     border-right: none;
 }
 
@@ -377,6 +385,7 @@ header {
     flex: 0;
     object-fit: contain;
 }
+
 
 /* CLIENTES */
 
@@ -401,14 +410,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background: var(--cor04);
+    background: var(--cor04) url('../img/icones/bottom-right.svg') no-repeat left 95% bottom 5%;
     padding: 80px;
 }
 
 .depoimento p {
     padding-bottom: 32px;
     max-width: 32ch;
-    font-size: 1.6em;
+    font-size: 2.5rem;
     font-family: 'Merriweather', serif;
     font-style: italic;
     font-weight: 900;
@@ -436,8 +445,15 @@ header {
 }
 
 cite {
-    font-size: 1.125em;
+    font-size: 1.8rem;
     font-weight: bold;
     font-style: normal;
     color: var(--cor08);
+}
+
+
+/* SEGUROS */
+
+.seguros {
+    background: var(--cor07);
 }
