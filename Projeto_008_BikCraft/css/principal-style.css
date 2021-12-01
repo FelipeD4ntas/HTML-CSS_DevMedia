@@ -52,6 +52,9 @@ img {
     --cor07: #111111;
     --cor08: #664400;
     --cor09: #E4A30B;
+    --cor10: #9C9C9C;
+    --cor11: #404040;
+    --cor12: #2E2E2E;
 }
 
 
@@ -155,7 +158,7 @@ header {
 }
 
 .box-botao {
-    max-width: 211px;
+    max-width: 210px;
     background: var(--cor04);
     border-radius: 5px;
 }
@@ -456,4 +459,165 @@ cite {
 
 .seguros {
     background: var(--cor07);
+    padding: 60px calc((100% - 1200px) / 2);
+}
+
+.box-seguros {
+    margin: 0 20px;
+}
+
+.box-itens-seguros {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-seguro {
+    background: var(--cor01);
+    border-radius: 5px;
+    padding: 32px 32px 32px 64px;
+    flex: 1 1 360.1px;
+    height: max-content;
+}
+
+.item-seguro:first-child {
+    margin-right: 40px;
+}
+
+.titulo-seguro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-seguro h2 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+.titulo-seguro.prata h2 {
+   color: var(--cor10);
+}
+
+.titulo-seguro.ouro h2 {
+    color: var(--cor04);
+ }
+
+.titulo-seguro p {
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding-bottom: 40px;
+    color: var(--cor02);
+    position: relative;
+}
+
+.titulo-seguro p::after {
+    content: 'mensal';
+    color: var(--cor10);
+    display: block;
+    font-size: 1.2rem;
+    font-weight: normal;
+    align-self: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    right: 0px;
+    top: 25px;
+}
+
+.item-seguro ul li {
+    font-size: 1.8rem;
+    color: var(--cor02);
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.item-seguro ul li:last-child {
+    margin-bottom: 30px;
+}
+
+.item-seguro ul li::before {
+    content: '';
+    height: 1em;
+    width: 1em;
+    background: url('../img/icones/lista.svg') no-repeat;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+}
+
+.box-botao.prata {
+    background: var(--cor12);
+    max-width: 185px;
+}
+
+.botao.prata a {
+    color: var(--cor02);
+}
+
+.botao.prata:hover {
+    background: var(--cor11);
+}
+
+.box-botao.ouro {
+    max-width: 185px;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--cor01);
+    padding: 0 calc((100% - 1200px) / 2);
+}
+
+.box-rodape {
+    padding: 65px 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-rodape.informacoes-rodape {
+    width: 25%;
+}
+
+.item-rodape.contato-rodape {
+    width: 33%;
+    margin: 0 140px;
+}
+.item-rodape h3 {
+    color: var(--cor02);
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    padding-bottom: 45px;
+}
+
+.item-rodape p, .item-rodape a {
+    display: block;
+    color: var(--cor03);
+    font-size: 1.8rem;
+    padding-bottom: 26px;
+}
+
+.endereco {
+    border-top: 2px solid #40404044;
+    border-bottom: 2px solid #40404044;
+    padding: 15px 0;
+}
+
+.endereco p:last-child {
+    padding-bottom: 0px;
+}
+
+.redes-sociais {
+    padding-top: 26px;
+    display: flex;
+}
+
+.redes-sociais a {
+    padding-right: 32px;
+}
+
+.direitos-rodape p {
+    color: var(--cor02);
 }
