@@ -1,113 +1,203 @@
 @charset "UTF-8";
-
 @media (max-width: 1239px) {
-
     /* PARCEIROS */
-    .item-parceiro  {
+    .item-parceiro {
         flex: 1 1 250px;
     }
 }
 
 @media (max-width: 998px) {
-    
     /* PARCEIROS */
-    .item-parceiro  {
+    .item-parceiro {
         flex: 1 1 200px;
     }
 }
 
 @media (max-width: 800px) {
-
+    /* HEADER */
+    .list-menu li {
+        padding-left: 20px;
+    }
+    .list-menu a {
+        padding: 15px;
+        background: var(--cor07);
+        border-radius: 5px;
+    }
+    .list-menu a::after {
+        display: none;
+    }
+    /* INTRODUÇÃO */
+    .introducao {
+        background: var(--cor01);
+        box-shadow: inset 0 0, inset 0 -60px var(--cor02);
+    }
+    .intro-item {
+        flex: 1 1 100%;
+    }
+    .img-intro {
+        max-height: 300px;
+        min-height: 300px;
+        width: 100%;
+    }
+    .intro-artigo {
+        padding-bottom: 20px;
+    }
+    .intro-artigo h1 {
+        font-size: 3.3rem;
+        padding: 30px 0 10px 0;
+    }
+    .ponto::after {
+        width: 5px;
+        height: 5px;
+        margin-left: 3px;
+    }
+    .intro-artigo p {
+        font-size: 1.8rem;
+    }
+    /* ESCOLHA */
+    .escolha {
+        margin: 60px 0;
+    }
+    .item-escolha {
+        margin-right: 20px;
+    }
+    .titulo-preto {
+        font-size: 3.3rem;
+        margin: 0 20px 40px 20px;
+    }
+    .desc-img h2 {
+        font-size: 2.4rem;
+    }
+    .desc-img h2::before {
+        height: 8px;
+    }
+    /* TECNOLOGIA */
+    .tecnologia {
+        box-shadow: none;
+    }
+    .box-tecnologia {
+        margin: 0 20px;
+        padding: 60px 0;
+    }
+    .box-tec-img {
+        display: none;
+    }
+    .tec-artigo span {
+        font-size: 1.8rem;
+    }
+    .titulo-branco {
+        font-size: 3.3rem;
+    }
+    .tec-artigo p {
+        font-size: 1.8rem;
+    }
+    .link-tec {
+        font-size: 2.4rem;
+    }
+    .box-tec-vantagem {
+        padding-top: 60px;
+    }
+    .tec-vantagem p {
+        font-size: 1.5rem;
+    }
     /* PARCEIROS */
-    .item-parceiro  {
+    .item-parceiro {
         flex: 1 1 267px;
     }
-
-    .item-parceiro:nth-of-type(2n + 1) {
+    .item-parceiro:nth-of-type(2n+1) {
         border-bottom: 2px solid #b2b2b25d;
     }
-
-    .item-parceiro:nth-of-type(2n + 2) {
+    .item-parceiro:nth-of-type(2n+2) {
         border-right: none;
         border-bottom: 2px solid #b2b2b25d;
     }
-
-    .item-parceiro:nth-of-type(n + 7) {
+    .item-parceiro:nth-of-type(n+7) {
         border-bottom: none;
     }
-
     /* SEGUROS */
     .item-seguro {
         flex: 1 1 100%;
         margin: 20px 0;
     }
-
     .item-seguro:first-child {
         margin-right: 0;
     }
-
-    .titulo-seguro h2, .titulo-seguro p {
+    .titulo-seguro h2,
+    .titulo-seguro p {
         font-size: 2.4rem;
     }
-
     /* CLIENTES */
     .item-cliente {
         flex: 1 1 100%;
-        max-height: 285px; 
+        max-height: 285px;
     }
-
     .item-cliente.img-depoimento {
         max-height: 200px;
     }
-
     .depoimento {
         align-items: center;
         padding: 40px 20px;
     }
-
     .depoimento p {
         font-size: 2rem;
         text-align: center;
     }
-
     .depoimento p::before {
         left: -35px;
     }
-
     .depoimento p::after {
         bottom: 20px;
+    }
+    /* RODAPE */
+    .item-rodape.logo-rodape {
+        display: none;
     }
 }
 
 @media (max-width: 533px) {
-
+    /* HEADER */
+    .img-menu {
+        padding: 0px 15px 15px 0px;
+    }
+    .list-menu a {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    /* INTRODUÇÃO */
+    .box-botao {
+        max-width: max-content;
+    }
+    .botao {
+        padding: 15px;
+        font-size: 1.6rem;
+    }
+    /* ESCOLHA */
+    .item-escolha {
+        margin-right: 10px;
+    }
     /* PARCEIROS */
-    .item-parceiro  {
+    .item-parceiro {
         flex: 1 1 178px;
     }
-
-     /* CLIENTES */
+    /* CLIENTES */
     .depoimento p::before {
         display: none;
     }
-
     .depoimento p::after {
         display: none;
     }
 }
 
 @media (max-width: 355px) {
-
     /* PARCEIROS */
-    .item-parceiro  {
+    .item-parceiro {
         flex: 1 1 150px;
     }
 }
 
 @media (min-width: 1200px) {
-
-     /* CLIENTES */
-    .item-cliente { 
-        max-height: 520px; 
+    /* CLIENTES */
+    .item-cliente {
+        max-height: 520px;
     }
 }
