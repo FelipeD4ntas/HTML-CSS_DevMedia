@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body::-webkit-scrollbar {
+    display: none;
+}
+/* TOPO */
+.box-topo {
+    background: var(--cor07);
+    padding: 0 calc((100% - 1200px) / 2);
+    padding-top: 64px;
+    padding-bottom: 30px;
+}
+
+.topo {
+    background: transparent url('../img/icones/top-right.svg') no-repeat right 20px top 0px;
+    padding: 0 20px;
+}
+
+/* BIKES */
+.box-bikes {
+    padding: 60px calc((100% - 1200px) / 2);
+}
+
+.bike-container {
+    padding: 0 20px;
+    max-height: 340px;
+    display: flex;
+}
+
+.bike-img {
+    margin-right: 40px;
+    flex: 1 1 50%;
+}
+
+.bike-img img {
+    width: 100%;
+}
+
+.box-desc-bike {
+    flex: 1 1 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.desc-bike {
+    height: max-content;
+}
+
+.config-bike li {
+    display: flex;
+}
+

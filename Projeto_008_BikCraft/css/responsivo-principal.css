@@ -62,7 +62,7 @@
         margin-right: 20px;
     }
     .titulo-preto {
-        font-size: 3.3rem;
+        font-size: 3.2rem;
         margin: 0 20px 40px 20px;
     }
     .desc-img h2 {
@@ -82,11 +82,11 @@
     .box-tec-img {
         display: none;
     }
-    .tec-artigo span {
+    .subtitulo {
         font-size: 1.8rem;
     }
     .titulo-branco {
-        font-size: 3.3rem;
+        font-size: 3.2rem;
     }
     .tec-artigo p {
         font-size: 1.8rem;
@@ -121,6 +121,9 @@
     }
     .item-seguro:first-child {
         margin-right: 0;
+    }
+    .item-seguro.ouro {
+        order: -1;
     }
     .titulo-seguro h2,
     .titulo-seguro p {
@@ -192,6 +195,39 @@
     /* PARCEIROS */
     .item-parceiro {
         flex: 1 1 150px;
+    }
+}
+
+@media (max-width: 315px) {
+    /* HEADER */
+    .box-menu {
+        justify-content: center;
+    }
+    .list-menu li {
+       width: 100%;
+       text-align: center;
+       padding: 0 0 20px 0;
+    }
+    .list-menu li a {
+        width: 100%;
+     }
+    /* TECNOLOGIA */
+    .link-tec {
+        font-size: 2.1rem;
+    }
+    /* PARCEIROS */
+    .item-parceiro {
+        flex: 1 1 160px;
+    }
+    .item-parceiro:last-child {
+        border-top: 2px solid #b2b2b25d;
+    }
+    /* SEGUROS */
+    .titulo-seguro p, .titulo-seguro h2 {
+        font-size: 2.2rem;
+    }
+    .item-seguro {
+        padding-left: 32px;
     }
 }
 
