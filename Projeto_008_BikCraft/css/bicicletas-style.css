@@ -1,9 +1,11 @@
 @charset "UTF-8";
-
 body::-webkit-scrollbar {
     display: none;
 }
+
+
 /* TOPO */
+
 .box-topo {
     background: var(--cor07);
     padding: 0 calc((100% - 1200px) / 2);
@@ -16,20 +18,41 @@ body::-webkit-scrollbar {
     padding: 0 20px;
 }
 
+
 /* BIKES */
+
 .box-bikes {
     padding: 60px calc((100% - 1200px) / 2);
 }
 
 .bike-container {
-    padding: 0 20px;
-    max-height: 340px;
     display: flex;
 }
 
 .bike-img {
-    margin-right: 40px;
+    padding: 0 20px;
     flex: 1 1 50%;
+    position: relative;
+}
+
+.bike-img::after {
+    content: '';
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: var(--cor02);
+    background: var(--cor01);
+    border-radius: 5px;
+    width: 75px;
+    height: 25px;
+    padding: 8px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.bike-img.nimbus::after {
+    content: 'R$ 4999';
 }
 
 .bike-img img {
@@ -39,14 +62,98 @@ body::-webkit-scrollbar {
 .box-desc-bike {
     flex: 1 1 50%;
     display: flex;
+    align-content: flex-start;
     flex-wrap: wrap;
 }
 
 .desc-bike {
-    height: max-content;
+    flex: 1 1 100%;
+    padding: 20px;
+}
+
+.desc-bike h2 {
+    font-size: 3.2rem;
+    color: var(--cor01);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.desc-bike h2::before {
+    content: '';
+    width: 12px;
+    height: 8px;
+    background: var(--cor04);
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+.desc-bike p {
+    font-size: 1.6rem;
+    color: var(--cor06);
+    max-width: 60ch;
+}
+
+.config-bike {
+    display: flex;
+    flex: 1 1 100%;
+}
+
+.config-bike ul {
+    flex: 1 1 50%;
+    padding: 20px;
+    padding-right: 0;
 }
 
 .config-bike li {
     display: flex;
+    align-items: center;
+    padding-bottom: 10px;
 }
 
+.config-bike li:last-child {
+    padding-bottom: 0;
+}
+
+.config-bike li img {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.config-bike li p {
+    font-size: 1.8rem;
+    color: var(--cor06);
+}
+
+.container-botao {
+    flex: 1 1 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.botao.sobre {
+    width: max-content;
+    padding: 16px 32px;
+    padding-right: 64px;
+}
+
+.botao.sobre a {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.botao.sobre a::after {
+    content: url('../img/icones/seta.svg');
+    position: absolute;
+    right: -30px;
+    bottom: 2px;
+}
+
+.botao.sobre:hover a::after {
+    right: -35px;
+}
