@@ -195,6 +195,10 @@
     .item-escolha {
         margin-right: 10px;
     }
+    /* TECNOLOGIA */
+    .box-tec-vantagem {
+        flex-wrap: wrap;
+    }
     /* PARCEIROS */
     .item-parceiro {
         flex: 1 1 178px;
@@ -223,7 +227,7 @@
         flex-wrap: wrap;
     }
     .config-bike ul li {
-        flex: 1 1 50%; 
+        flex: 1 1 50%;
     }
     .container-botao {
         flex: 1 1 100%;
@@ -246,7 +250,7 @@
         font-size: 1.6rem;
     }
     .config-bike ul li {
-        flex: 1 1 100%; 
+        flex: 1 1 100%;
     }
 }
 
@@ -256,13 +260,13 @@
         justify-content: center;
     }
     .list-menu li {
-       width: 100%;
-       text-align: center;
-       padding: 0 0 20px 0;
+        width: 100%;
+        text-align: center;
+        padding: 0 0 20px 0;
     }
     .list-menu li a {
         width: 100%;
-     }
+    }
     /* TECNOLOGIA */
     .link-tec {
         font-size: 2.1rem;
@@ -275,7 +279,8 @@
         border-top: 2px solid #b2b2b25d;
     }
     /* SEGUROS */
-    .titulo-seguro p, .titulo-seguro h2 {
+    .titulo-seguro p,
+    .titulo-seguro h2 {
         font-size: 2.2rem;
     }
     .item-seguro {
@@ -285,7 +290,6 @@
     .topo span {
         display: none;
     }
- 
 }
 
 @media (min-width: 1200px) {
