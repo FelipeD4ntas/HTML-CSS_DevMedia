@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* TOPO BIKE INDIVIDUAL */
+.titulo-branco.bike-solo {
+    text-transform: none;
+}
+
+.subtitulo.bike-solo {
+    font-size: 3.2rem;
+    padding-bottom: 5px;
+}
+
+/* FICHA TECNICA BIKE */
+.info-bike {
+    padding: 0 calc((100% - 1200px) / 2);
+    background: var(--cor07);
+    display: flex;
+}
+
+.box-img-bike-solo {
+    margin: 0 20px;
+    flex: 1 1 50%;
+}
+
+.box-infos-bike {
+    margin: 0 20px;
+    flex: 1 1 50%;
+}
+
+.box-tec-vantagem.bike-solo {
+    padding: 30px;
+    margin-top: 70px;
+    background: var(--cor01);
+}
+
+.tec-vantagem {
+ padding-top: 0;
+}
+
+.tec-vantagem.bike-solo:first-child {
+    margin-right: 0px;
+}
+
+/* ESCOLHA BIKE INDIVIDUAL*/
+.escolha.bike-solo {
+    padding: 0 calc((100% - 1200px) / 2);
+}
+
+.tec-vantagem.bike-solo p {
+    font-size: 1.4rem;
+}

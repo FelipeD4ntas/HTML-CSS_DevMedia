@@ -51,7 +51,7 @@
         height: 5px;
         margin-left: 3px;
     }
-    .intro-artigo p {
+    .desc-artigo {
         font-size: 1.8rem;
     }
     /* ESCOLHA */
@@ -87,9 +87,6 @@
     }
     .titulo-branco {
         font-size: 3.2rem;
-    }
-    .tec-artigo p {
-        font-size: 1.8rem;
     }
     .link-tec {
         font-size: 2.4rem;
@@ -155,6 +152,26 @@
     .item-rodape.logo-rodape {
         display: none;
     }
+    /* PÁGINA DAS BIKES */
+    .box-bikes {
+        padding: 40px calc((100% - 1200px) / 2);
+    }
+    .box-bikes:nth-child(2n+3) {
+        background: var(--cor07);
+    }
+    .bike-container {
+        flex-wrap: wrap;
+    }
+    .bike-img {
+        flex: 1 1 100%;
+    }
+    .box-desc-bike {
+        flex: 1 1 100%;
+        padding-top: 20px;
+    }
+    .desc-bike h2 {
+        font-size: 2.4rem;
+    }
 }
 
 @media (max-width: 533px) {
@@ -189,12 +206,47 @@
     .depoimento p::after {
         display: none;
     }
+    /* PÁGINA DAS BIKES */
+    .topo {
+        background: transparent;
+    }
+    .box-bikes {
+        padding: 20px calc((100% - 1200px) / 2);
+    }
+    .config-bike {
+        flex-wrap: wrap;
+    }
+    .config-bike ul {
+        flex: 1 1 100%;
+        padding: 10px 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .config-bike ul li {
+        flex: 1 1 50%; 
+    }
+    .container-botao {
+        flex: 1 1 100%;
+        padding: 10px 20px;
+        justify-content: flex-start;
+    }
 }
 
 @media (max-width: 355px) {
     /* PARCEIROS */
     .item-parceiro {
         flex: 1 1 150px;
+    }
+    /* PÁGINA DAS BIKES */
+    .box-topo {
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    .topo span {
+        font-size: 1.6rem;
+    }
+    .config-bike ul li {
+        flex: 1 1 100%; 
     }
 }
 
@@ -229,6 +281,11 @@
     .item-seguro {
         padding-left: 32px;
     }
+    /* PÁGINA DAS BIKES */
+    .topo span {
+        display: none;
+    }
+ 
 }
 
 @media (min-width: 1200px) {

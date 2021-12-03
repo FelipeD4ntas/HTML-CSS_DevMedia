@@ -1,7 +1,7 @@
 @charset "UTF-8";
-body::-webkit-scrollbar {
+/*body::-webkit-scrollbar {
     display: none;
-}
+}*/
 
 
 /* TOPO */
@@ -25,6 +25,18 @@ body::-webkit-scrollbar {
     padding: 60px calc((100% - 1200px) / 2);
 }
 
+.box-bikes:nth-child(2n+3) {
+    background-image: linear-gradient(to right, var(--cor02) 30%, var(--cor07) 0%) ;
+}
+
+.box-bikes:nth-child(2n+3) h2 {
+    color: var(--cor02);
+}
+
+.box-bikes:nth-child(2n+3) p {
+    color: var(--cor03);
+}
+
 .bike-container {
     display: flex;
 }
@@ -42,7 +54,7 @@ body::-webkit-scrollbar {
     font-size: 1.8rem;
     color: var(--cor02);
     background: var(--cor01);
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
     width: 75px;
     height: 25px;
     padding: 8px;
@@ -53,6 +65,14 @@ body::-webkit-scrollbar {
 
 .bike-img.nimbus::after {
     content: 'R$ 4999';
+}
+
+.bike-img.magic::after {
+    content: 'R$ 2499';
+}
+
+.bike-img.nebula::after {
+    content: 'R$ 3999';
 }
 
 .bike-img img {
@@ -68,7 +88,8 @@ body::-webkit-scrollbar {
 
 .desc-bike {
     flex: 1 1 100%;
-    padding: 20px;
+    padding: 15px 20px;
+    background: transparent url('../img/icones/top-right.svg') no-repeat right 20px top 0px;
 }
 
 .desc-bike h2 {
@@ -84,7 +105,7 @@ body::-webkit-scrollbar {
     height: 8px;
     background: var(--cor04);
     position: absolute;
-    top: -20px;
+    top: -15px;
     left: 0;
 }
 
@@ -152,6 +173,7 @@ body::-webkit-scrollbar {
     position: absolute;
     right: -30px;
     bottom: 2px;
+    transition: 0.3s;
 }
 
 .botao.sobre:hover a::after {

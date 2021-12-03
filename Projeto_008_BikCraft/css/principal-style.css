@@ -157,7 +157,7 @@ header {
     background: var(--cor04);
 }
 
-.intro-artigo p {
+.desc-artigo {
     font-size: 2.4rem;
     color: var(--cor03);
     padding-bottom: 20px;
@@ -264,6 +264,9 @@ header {
 
 .tec-img {
     height: 100%;
+    object-fit: cover;
+    object-position: left;
+    
 }
 
 .box-tecnologia {
@@ -279,12 +282,6 @@ header {
     font-size: 2.4rem;
     font-weight: normal;
     text-transform: uppercase;
-    color: var(--cor03);
-    padding-bottom: 20px;
-}
-
-.tec-artigo p {
-    font-size: 2.4rem;
     color: var(--cor03);
     padding-bottom: 20px;
 }
@@ -345,6 +342,7 @@ header {
 .tec-vantagem p {
     padding-bottom: 0px;
     font-size: 1.6rem;
+    color: var(--cor03);
 }
 
 
@@ -603,6 +601,10 @@ footer {
     color: var(--cor03);
     font-size: 1.8rem;
     padding-bottom: 20px;
+}
+
+.item-rodape a:hover {
+    color: var(--cor02);
 }
 
 .endereco p:last-child {
