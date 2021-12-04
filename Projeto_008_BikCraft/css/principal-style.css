@@ -142,7 +142,7 @@ header {
     padding-bottom: 150px;
 }
 
-.intro-artigo h1 {
+.titulo-relevante {
     font-size: 6.4rem;
     color: var(--cor02);
     padding: 30px 0;
@@ -191,7 +191,7 @@ header {
 /* ESCOLHA */
 
 .escolha {
-    margin: 80px 0;
+    margin: 60px 0;
 }
 
 .titulo-preto {
@@ -314,7 +314,7 @@ header {
 
 .box-tec-vantagem {
     display: flex;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 .tec-vantagem {
@@ -347,7 +347,7 @@ header {
 /* PARCEIROS */
 
 .parceiros {
-    margin: 80px 0;
+    margin: 60px 0;
 }
 
 .box-parceiros {

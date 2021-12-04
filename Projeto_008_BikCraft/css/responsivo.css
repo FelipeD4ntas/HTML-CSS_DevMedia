@@ -11,6 +11,10 @@
     .item-parceiro {
         flex: 1 1 200px;
     }
+    /* FICHA TECNICA BIKE */
+    .titulo-relevante.pedale-mais {
+        font-size: 4.8rem;
+    }
 }
 
 @media (max-width: 800px) {
@@ -42,7 +46,7 @@
     .intro-artigo {
         padding-bottom: 20px;
     }
-    .intro-artigo h1 {
+    .titulo-relevante {
         font-size: 3.3rem;
         padding: 30px 0 10px 0;
     }
@@ -172,6 +176,34 @@
     .desc-bike h2 {
         font-size: 2.4rem;
     }
+    /* FICHA TECNICA BIKE */
+    .info-bike {
+        flex-wrap: wrap;
+    }
+    
+    .box-infos-bike {
+        order: -1;
+    }
+    .bike-solo.g {
+        padding-top: 20px;
+    }
+    /* ARTIGO SAIBA MAIS */
+    .box-artigo-mais {
+        flex-wrap: wrap;
+        box-shadow: inset 0 0 var(--cor02), inset 0 -80px var(--cor01);
+    }
+    .titulo-relevante.pedale-mais {
+        font-size: 3.2rem;
+        padding-bottom: 20px;
+    }
+    .img-artigo-mais {
+        flex: 1 1 100%;
+    } 
+    .artigo-mais {
+        order: -1;
+        padding: 40px 20px;
+        flex: 1 1 100%;
+    }
 }
 
 @media (max-width: 533px) {
@@ -234,6 +266,54 @@
         padding: 10px 20px;
         justify-content: flex-start;
     }
+
+    /* FICHA TECNICA BIKE */
+    .subtitulo.bike-solo {
+        font-size: 2.5rem;
+    }
+    .entrega, .estoque {
+        padding: 2px 5px;
+        left: 185px;
+    }
+    .bike-solo.dupla {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .bike-solo.p {
+        flex: 1 1 100%;
+        height: auto;
+    }
+    .bike-solo.p:first-child {
+        padding-right: 0px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .box-entrega {
+        padding-bottom: 50px;
+    }
+    .entrega {
+        top: 56px;
+        left: 0;
+    }
+    .estoque {
+        bottom: -7px;
+        left: 0;
+    }
+    .tec-vantagem.bike-solo {
+        padding-top: 20px;
+        flex: 1 1 100%;
+    }
+    
+    .tec-vantagem:first-child {
+        padding-top: 0px;
+    }
+    
+    .tec-vantagem:nth-child(2n + 1) {
+        padding-right: 0px;
+    }
+    
 }
 
 @media (max-width: 355px) {
