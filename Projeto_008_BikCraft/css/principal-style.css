@@ -97,7 +97,7 @@ header {
 }
 
 .list-menu a::after {
-    content: "";
+    content: '';
     display: block;
     height: 2px;
     width: 0px;

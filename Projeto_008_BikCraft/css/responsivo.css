@@ -96,7 +96,7 @@
         font-size: 2.4rem;
     }
     .box-tec-vantagem {
-        padding-top: 60px;
+        padding-top: 40px;
     }
     .tec-vantagem p {
         font-size: 1.5rem;
@@ -180,7 +180,6 @@
     .info-bike {
         flex-wrap: wrap;
     }
-    
     .box-infos-bike {
         order: -1;
     }
@@ -198,7 +197,7 @@
     }
     .img-artigo-mais {
         flex: 1 1 100%;
-    } 
+    }
     .artigo-mais {
         order: -1;
         padding: 40px 20px;
@@ -266,12 +265,12 @@
         padding: 10px 20px;
         justify-content: flex-start;
     }
-
     /* FICHA TECNICA BIKE */
     .subtitulo.bike-solo {
         font-size: 2.5rem;
     }
-    .entrega, .estoque {
+    .entrega,
+    .estoque {
         padding: 2px 5px;
         left: 185px;
     }
@@ -305,15 +304,12 @@
         padding-top: 20px;
         flex: 1 1 100%;
     }
-    
-    .tec-vantagem:first-child {
+    .tec-vantagem.bike-solo:first-child {
         padding-top: 0px;
     }
-    
-    .tec-vantagem:nth-child(2n + 1) {
+    .tec-vantagem.bike-solo:nth-child(2n + 1) {
         padding-right: 0px;
     }
-    
 }
 
 @media (max-width: 355px) {

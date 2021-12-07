@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*body::-webkit-scrollbar {
     display: none;
 }*/
@@ -9,7 +10,7 @@
 .box-topo {
     background: var(--cor07);
     padding: 0 calc((100% - 1200px) / 2);
-    padding-top: 64px;
+    padding-top: 60px;
     padding-bottom: 30px;
 }
 
@@ -26,7 +27,7 @@
 }
 
 .box-bikes:nth-child(2n+3) {
-    background-image: linear-gradient(to right, var(--cor02) 30%, var(--cor07) 0%) ;
+    background-image: linear-gradient(to right, var(--cor02) 30%, var(--cor07) 0%);
 }
 
 .box-bikes:nth-child(2n+3) h2 {

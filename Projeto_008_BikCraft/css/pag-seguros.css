@@ -1,0 +1,45 @@
+@charset "UTF-8";
+.subtitulo.seguro {
+    padding-bottom: 10px;
+}
+
+.seguros.pag-seguros {
+    padding-top: 0;
+}
+
+.vantagens {
+    padding: 60px calc((100% - 1200px) / 2);
+    background: var(--cor01);
+}
+
+.titulo-vantagens {
+    margin: 0 20px;
+}
+
+.box-tec-vantagem.seguro-vantagens {
+    margin: 0 20px;
+    padding-top: 0;
+    flex-wrap: wrap;
+}
+
+.tec-vantagem.tec-seguro {
+    flex: 1 1 300px;
+    margin-right: 0;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+.tec-vantagem.tec-seguro img {
+    width: auto;
+}
+
+.tec-vantagem.tec-seguro h3 {
+    font-size: 2.4rem;
+}
+
+@media (max-width: 800px) {
+    /* TOPO */
+    .subtitulo.seguro {
+        font-size: 1.6rem;
+    }
+}
