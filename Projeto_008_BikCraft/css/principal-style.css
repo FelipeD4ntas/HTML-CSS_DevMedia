@@ -56,6 +56,7 @@ img {
     --cor10: #9C9C9C;
     --cor11: #404040;
     --cor12: #2E2E2E;
+    --cor13: #F7F7F7;
 }
 
 
@@ -219,7 +220,7 @@ header {
     margin-right: 0px;
 }
 
-.desc-img h2 {
+.titulo-link {
     font-size: 3.2rem;
     color: var(--cor01);
     margin: 10px 0;
@@ -227,7 +228,7 @@ header {
     align-items: center;
 }
 
-.desc-img h2::before {
+.titulo-link::before {
     content: '';
     display: inline-block;
     width: 12px;
@@ -237,11 +238,11 @@ header {
     transition: 0.3s;
 }
 
-.desc-img h2:hover::before {
+.titulo-link:hover::before {
     width: 24px;
 }
 
-.desc-img p {
+.preco-link {
     font-size: 1.8rem;
     color: var(--cor06);
     margin-left: 24px;

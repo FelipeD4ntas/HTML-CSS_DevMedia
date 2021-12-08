@@ -69,10 +69,10 @@
         font-size: 3.2rem;
         margin: 0 20px 40px 20px;
     }
-    .desc-img h2 {
+    .titulo-link {
         font-size: 2.4rem;
     }
-    .desc-img h2::before {
+    .titulo-link::before {
         height: 8px;
     }
     /* TECNOLOGIA */
