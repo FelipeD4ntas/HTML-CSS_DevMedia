@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* CONTATO */
+
+.contato {
+    padding: 0 calc((100% - 1200px) / 2);
+    padding-bottom: 60px;
+    box-shadow: inset 0 40vh var(--cor07), inset 0 0;
+}
+
+.box-contato {
+    margin: 0 20px;
+    display: flex;
+}
+
+.loja-online {
+    flex: 1 1 40%;
+    background: var(--cor01) url('../img/icones/bottom-left.svg') no-repeat bottom 20px left 20px;
+    box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.137);
+    border-radius: 5px 0 0 5px;
+    padding: 60px;
+}
+
+.loja-online h3 {
+    color: var(--cor02);
+    padding-bottom: 40px;
+    font-weight: normal;
+}
+
+.loja-online p,
+.loja-online a {
+    color: var(--cor14);
+    line-height: 30px;
+}
+
+.loja-online a:hover {
+    color: var(--cor02);
+}
+
+.topo-endereco,
+.topo-mail,
+.topo-tel {
+    position: relative;
+}
+
+.topo-endereco::before {
+    content: url('../img/icones/local.svg');
+    position: absolute;
+    left: -30px;
+    top: 4px;
+}
+
+.topo-mail::before {
+    content: url('../img/icones/email.svg');
+    position: absolute;
+    left: -30px;
+    top: 4px;
+}
+
+.topo-tel::before {
+    content: url('../img/icones/telefone.svg');
+    position: absolute;
+    left: -30px;
+    top: 4px;
+}
+
+.item-loja {
+    padding: 0 30px 30px 30px;
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+    flex: 1 1 60%;
+    background: var(--cor02);
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.137);
+    border-radius: 0 5px 5px 0;
+    padding: 60px;
+}
+
+.item-form {
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.item-form.name-email {
+    justify-content: space-between;
+}
+
+.nome-user,
+.tel-user {
+    width: 266px;
+}
+
+.nome-user,
+.tel-user,
+.email-user,
+.area-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.nome-user label,
+.tel-user label,
+.email-user label,
+.area-texto label {
+    padding-bottom: 10px;
+}
+
+.nome-user input,
+.tel-user input,
+.email-user input,
+.area-texto textarea {
+    background: var(--cor14);
+    font-size: 1.6rem;
+    padding: 15px;
+}
+
+.botao.form {
+    color: var(--cor05);
+    text-transform: uppercase;
+    font-weight: bolder;
+}

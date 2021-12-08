@@ -218,6 +218,10 @@
     .box-botao {
         max-width: max-content;
     }
+    .box-botao.prata,
+    .box-botao.ouro {
+        max-width: 152px;
+    }
     .botao {
         padding: 15px;
         font-size: 1.6rem;
@@ -365,6 +369,10 @@
     /* PÁGINA DAS BIKES */
     .topo span {
         display: none;
+    }
+    .box-botao.prata,
+    .box-botao.ouro {
+        max-width: 176px;
     }
 }
 

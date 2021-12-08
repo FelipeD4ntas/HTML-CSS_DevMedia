@@ -1,6 +1,5 @@
 @charset "UTF-8";
-
-.subtitulo.seguro {
+.subtitulo {
     padding-bottom: 10px;
 }
 
@@ -37,7 +36,9 @@
     font-size: 2.4rem;
 }
 
+
 /* PERGUNTAS */
+
 .perguntas {
     padding: 60px calc((100% - 1200px) / 2);
     background: var(--cor02);
@@ -101,13 +102,13 @@
     display: none;
 }
 
-.check:checked + .desc-pergunta {
+.check:checked+.desc-pergunta {
     display: block;
 }
 
 @media (max-width: 800px) {
     /* TOPO */
-    .subtitulo.seguro {
+    .subtitulo {
         font-size: 1.6rem;
     }
 }
