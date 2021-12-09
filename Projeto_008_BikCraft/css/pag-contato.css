@@ -5,7 +5,7 @@
 .contato {
     padding: 0 calc((100% - 1200px) / 2);
     padding-bottom: 60px;
-    box-shadow: inset 0 40vh var(--cor07), inset 0 0;
+    box-shadow: inset 0 250px var(--cor07), inset 0 0;
 }
 
 .box-contato {
@@ -14,7 +14,7 @@
 }
 
 .loja-online {
-    flex: 1 1 40%;
+    width: 40%;
     background: var(--cor01) url('../img/icones/bottom-left.svg') no-repeat bottom 20px left 20px;
     box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.137);
     border-radius: 5px 0 0 5px;
@@ -72,8 +72,8 @@
 /* FORMULARIO */
 
 .formulario {
-    flex: 1 1 60%;
-    background: var(--cor02);
+    width: 60%;
+    background: var(--cor02) url('../img/icones/bottom-right.svg') no-repeat bottom 20px right 20px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.137);
     border-radius: 0 5px 5px 0;
     padding: 60px;
@@ -82,15 +82,17 @@
 .item-form {
     padding-bottom: 20px;
     display: flex;
+    flex: 1 1 100%;
 }
 
-.item-form.name-email {
-    justify-content: space-between;
+.nome-user {
+    padding-right: 10px;
+    width: 50%;
 }
 
-.nome-user,
 .tel-user {
-    width: 266px;
+    padding-left: 10px;
+    width: 50%;
 }
 
 .nome-user,
@@ -112,13 +114,163 @@
 .tel-user input,
 .email-user input,
 .area-texto textarea {
-    background: var(--cor14);
+    background: var(--cor13);
+    border-radius: 5px;
+    border: 1px solid #E7E7E7;
     font-size: 1.6rem;
     padding: 15px;
+}
+
+.nome-user input[type="text"]:focus,
+.tel-user input[type="tel"]:focus,
+.email-user input[type="email"]:focus,
+.area-texto textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 0px 2px rgb(255, 238, 171);
+    border: 1px solid var(--cor04);
+    background: var(--cor02);
 }
 
 .botao.form {
     color: var(--cor05);
     text-transform: uppercase;
     font-weight: bolder;
+}
+
+/* Mapas Lojas */
+.lojas-locais {
+    padding: 60px calc((100% - 1200px) / 2);
+}
+.box-lojas-locais {
+    margin: 0 20px;
+    display: flex;
+}
+
+.mapa.rj {
+    margin-right: 20px;
+}
+
+.mapa.sp {
+    margin-left: 20px;
+}
+
+.mapa img {
+    border-radius: 5px 5px 0 0;
+}
+
+.desc-mapa {
+    padding: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.137);
+    border-radius: 0 0 5px 5px;
+}
+
+.desc-mapa h2 {
+    font-size: 3.2rem;
+    padding-bottom: 30px;
+}
+
+.desc-mapa p, .desc-mapa a {
+    color: var(--cor06);
+    line-height: 30px;
+}
+
+.desc-mapa a:hover {
+    color: var(--cor01);
+}
+
+.rj-contato, .sp-contato {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.rj-endereco, 
+.rj-mail-tel, 
+.sp-endereco, 
+.sp-mail-tel {
+    flex: 1 1 50%;
+    border-left: 2px solid #EDEDED;
+    padding-left: 10px;
+}
+
+.horario {
+    display: flex;
+    align-items: center;
+}
+
+.horario p {
+    padding-left: 10px;
+    color: var(--cor01);
+}
+
+@media (max-width: 830px) {
+    /* MAPAS LOJAS */ 
+    .desc-mapa h2 {
+        font-size: 2.4rem;
+    }
+    .rj-contato, .sp-contato {
+        flex-direction: column;
+    }
+
+    .rj-endereco, .sp-endereco {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .box-contato {
+        flex-direction: column;
+    }
+
+    .loja-online {
+        width: 100%;
+        background: var(--cor01);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.137);
+        border-radius: 5px 5px 0 0;
+        padding: 20px;
+    }
+
+    .formulario {
+        width: 100%;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.137);
+        border-radius: 0 0 5px 5px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 533px) {
+    .formulario {
+        background: var(--cor02);
+    }
+
+    .item-form.name-email {
+        flex-direction: column;
+    }
+
+    .tel-user {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .nome-user {
+        padding-right: 0;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    /* MAPAS LOJAS */
+    .box-lojas-locais {
+        flex-direction: column;
+    }
+    .mapa.rj {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .mapa.sp {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 355px) {
+    .box-botao.form {
+        max-width: 100%;
+    }
 }

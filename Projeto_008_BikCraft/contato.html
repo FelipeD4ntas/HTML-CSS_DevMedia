@@ -25,7 +25,7 @@
             <ul class="list-menu">
                 <li><a href="bicicletas.html" target="_self" rel="next">Bicicletas</a></li>
                 <li><a href="seguros.html" target="_self" rel="next">Seguros</a></li>
-                <li><a href="#" target="_self" rel="next">Contato</a></li>
+                <li><a href="contato.html" target="_self" rel="next">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -71,7 +71,7 @@
                         <div class="item-form name-email">
                             <div class="nome-user">
                                 <label for="user_name">Nome</label>
-                                <input type="text" id="user_name" name="user_name" placeholder="Seu Nome">
+                                <input type="text" id="user_name" name="user_name" placeholder="Seu Nome" minlength="3" required>
                             </div>
                             <div class="tel-user">
                                 <label for="user_phone">Telefone</label>
@@ -81,19 +81,66 @@
 
                         <div class="item-form email-user">
                             <label for="user_mail">Email</label>
-                            <input type="email" id="user_mail" name="user_email" placeholder="contato@email.com">
+                            <input type="email" id="user_mail" name="user_email" placeholder="contato@email.com" required>
                         </div>
 
                         <div class="item-form area-texto">
                             <label for="user_msg">Mensagem</label>
-                            <textarea name="user_msg" id="user_msg" cols="30" rows="8"></textarea>
+                            <textarea name="user_msg" id="user_msg" placeholder="O que você precisa?"  rows="7"></textarea>
                         </div>
 
-                        <div class="box-botao">
+                        <div class="box-botao form">
                             <button type="submit" class="botao form">Enviar mensagem</button>
                         </div>
                     </form>
                 </div>
+            </div>
+        </section>
+
+        <section class="lojas-locais">
+            <h1 class="titulo-preto ponto">Lojas locais</h1>
+            <div class="box-lojas-locais">
+                <figure class="mapa rj">
+                    <img src="img/rj.jpg" alt="Mapa Rio de Janeiro">
+                    <figcaption class="desc-mapa">
+                        <h2>Rio de Janeiro</h2>
+                        <div class="rj-contato">
+                            <div class="rj-endereco">
+                                <p>Rua Ali Perto, 25</p>
+                                <p>Rio de Janeiro - RJ</p>
+                            </div>
+                            <div class="rj-mail-tel">
+                                <p><a href="mailto:rj@bikcraft.com">rj@bikcraft.com</a></p>
+                                <p><a href="tel:+55219999-9999">+55 21 9999-9999</a></p>
+                            </div>
+                        </div>
+                        <div class="horario">
+                            <img src="img/icones/horario.svg">
+                            <p>08-18h de seg à dom</p>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="mapa sp">
+                    <img src="img/sp.jpg" alt="Mapa São Paulo">
+                    <figcaption class="desc-mapa">
+                        <h2>São Paulo</h2>
+                        <div class="sp-contato">
+                            <div class="sp-endereco">
+                                <p>Rua Ali Perto, 25</p>
+                                <p>São Paulo - SP</p>
+                            </div>
+                            <div class="rj-mail-tel">
+                                <p><a href="mailto:sp@bikcraft.com">sp@bikcraft.com</a></p>
+                                <p><a href="tel:+55119999-9999">+55 11 9999-9999</a></p>
+                            </div>
+                        </div>
+                        <div class="horario">
+                            <img src="img/icones/horario.svg">
+                            <p>08-18h de seg à dom</p>
+                        </div>
+                    </figcaption>
+                </figure>
             </div>
         </section>
     </main>
@@ -132,7 +179,7 @@
                     <ul class="list-menu-rodape">
                         <li><a href="bicicletas.html" target="_self" rel="next">Bicicletas</a></li>
                         <li><a href="seguros.html" target="_self" rel="next">Seguros</a></li>
-                        <li><a href="#" target="_self" rel="next">Contato</a></li>
+                        <li><a href="contato.html" target="_self" rel="next">Contato</a></li>
                         <li><a href="#" target="_self" rel="next">Termos e Condições</a></li>
                     </ul>
                 </nav>
