@@ -2,18 +2,18 @@
 
 /* CONTATO */
 
-.contato {
+.contato-orcamento {
     padding: 0 calc((100% - 1200px) / 2);
     padding-bottom: 60px;
     box-shadow: inset 0 250px var(--cor07), inset 0 0;
 }
 
-.box-contato {
+.box-contato-orcamento {
     margin: 0 20px;
     display: flex;
 }
 
-.loja-online {
+.box-preto {
     width: 40%;
     background: var(--cor01) url('../img/icones/bottom-left.svg') no-repeat bottom 20px left 20px;
     box-shadow: -1px 1px 2px rgba(0, 0, 0, 0.137);
@@ -21,19 +21,19 @@
     padding: 60px;
 }
 
-.loja-online h3 {
+.box-preto h3 {
     color: var(--cor02);
     padding-bottom: 40px;
     font-weight: normal;
 }
 
-.loja-online p,
-.loja-online a {
+.box-preto p,
+.box-preto a {
     color: var(--cor14);
     line-height: 30px;
 }
 
-.loja-online a:hover {
+.box-preto a:hover {
     color: var(--cor02);
 }
 
@@ -69,9 +69,9 @@
 }
 
 
-/* FORMULARIO */
+/* box-branco */
 
-.formulario {
+.box-branco {
     width: 60%;
     background: var(--cor02) url('../img/icones/bottom-right.svg') no-repeat bottom 20px right 20px;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.137);
@@ -103,17 +103,12 @@
     flex-direction: column;
 }
 
-.nome-user label,
-.tel-user label,
-.email-user label,
-.area-texto label {
+label {
     padding-bottom: 10px;
 }
 
-.nome-user input,
-.tel-user input,
-.email-user input,
-.area-texto textarea {
+input,
+textarea {
     background: var(--cor13);
     border-radius: 5px;
     border: 1px solid #E7E7E7;
@@ -121,10 +116,8 @@
     padding: 15px;
 }
 
-.nome-user input[type="text"]:focus,
-.tel-user input[type="tel"]:focus,
-.email-user input[type="email"]:focus,
-.area-texto textarea:focus {
+input:focus,
+textarea:focus {
     outline: none;
     box-shadow: 0px 0px 0px 2px rgb(255, 238, 171);
     border: 1px solid var(--cor04);
@@ -137,10 +130,13 @@
     font-weight: bolder;
 }
 
+
 /* Mapas Lojas */
+
 .lojas-locais {
     padding: 60px calc((100% - 1200px) / 2);
 }
+
 .box-lojas-locais {
     margin: 0 20px;
     display: flex;
@@ -169,7 +165,8 @@
     padding-bottom: 30px;
 }
 
-.desc-mapa p, .desc-mapa a {
+.desc-mapa p,
+.desc-mapa a {
     color: var(--cor06);
     line-height: 30px;
 }
@@ -178,14 +175,15 @@
     color: var(--cor01);
 }
 
-.rj-contato, .sp-contato {
+.rj-contato,
+.sp-contato {
     display: flex;
     padding-bottom: 30px;
 }
 
-.rj-endereco, 
-.rj-mail-tel, 
-.sp-endereco, 
+.rj-endereco,
+.rj-mail-tel,
+.sp-endereco,
 .sp-mail-tel {
     flex: 1 1 50%;
     border-left: 2px solid #EDEDED;
@@ -203,33 +201,32 @@
 }
 
 @media (max-width: 830px) {
-    /* MAPAS LOJAS */ 
+    /* MAPAS LOJAS */
     .desc-mapa h2 {
         font-size: 2.4rem;
     }
-    .rj-contato, .sp-contato {
+    .rj-contato,
+    .sp-contato {
         flex-direction: column;
     }
-
-    .rj-endereco, .sp-endereco {
+    .rj-endereco,
+    .sp-endereco {
         margin-bottom: 30px;
     }
 }
 
 @media (max-width: 800px) {
-    .box-contato {
+    .box-contato-orcamento {
         flex-direction: column;
     }
-
-    .loja-online {
+    .box-preto {
         width: 100%;
         background: var(--cor01);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.137);
         border-radius: 5px 5px 0 0;
         padding: 20px;
     }
-
-    .formulario {
+    .box-branco {
         width: 100%;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.137);
         border-radius: 0 0 5px 5px;
@@ -238,19 +235,16 @@
 }
 
 @media (max-width: 533px) {
-    .formulario {
+    .box-branco {
         background: var(--cor02);
     }
-
     .item-form.name-email {
         flex-direction: column;
     }
-
     .tel-user {
         padding-left: 0;
         width: 100%;
     }
-
     .nome-user {
         padding-right: 0;
         padding-bottom: 20px;

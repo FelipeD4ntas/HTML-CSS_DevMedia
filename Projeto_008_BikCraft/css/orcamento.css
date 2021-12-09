@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.config-bike-orc {
+    display: flex;
+    padding: 20px;
+    background: var(--cor02);
+}
+
+.config-bike-orc ul {
+    flex: 1 1 50%;
+}
+
+.config-bike-orc ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.config-bike-orc ul li img {
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+}
+
+.img-bike-orc {
+    flex: 1 1 50%;
+}
+
+.img-bike-orc img {
+    height: 100%;
+    object-fit: cover;
+}
