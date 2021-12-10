@@ -43,57 +43,55 @@
             <div class=" box-contato-orcamento ">
                 <form class="box-preto ">
                     <p class="titulo-orc">Bikcraft ou Seguro?</p>
+                    <input type="radio" name="escolha">
+                    <label class="bike-escolha bikes">Bikcraft</label>
 
-                    <div class="container-escolhas">
-                        <div class="item-orcamento">
-                            <label class="bike-escolha bikes">
-                                <input type="radio" name="escolha">
-                                Bikcraft
-                            </label>
-                            <div class="container-bikes-orc">
-                                <p class="titulo-orc">Escolha a sua</p>
-                                <label class="bike-escolha produtos">
-                                    <input type="radio" name="bikes" id="bike">
-                                    Nimbus Stark<span>R$ 4999</span>
-                                </label>
-                                <div class="config-bike-orc">
-                                    <ul>
-                                        <li>
-                                            <img src="img/icones/eletrica.svg">
-                                            <p>Motor Elétrico</p>
-                                        </li>
-                                        <li>
-                                            <img src="img/icones/carbono.svg">
-                                            <p>Fibra de Carbono</p>
-                                        </li>
-                                        <li>
-                                            <img src="img/icones/velocidade.svg">
-                                            <p>40 km/h</p>
-                                        </li>
-                                        <li>
-                                            <img src="img/icones/rastreador.svg">
-                                            <p>Rastreador</p>
-                                        </li>
-                                    </ul>
-                                    <div class="img-bike-orc">
-                                        <img src="img/nimbus.jpg" alt="Nimbus Stark">
-                                    </div>
-                                </div>
+                    <input type="radio" name="escolha">
+                    <label class="bike-escolha seguros">Seguros</label>
+
+                    <div class="orcamento-bikecraft">
+                        <p class="titulo-orc">Escolha a sua</p>
+                        <input type="radio" name="bikes" id="bike">
+                        <label class="bike-escolha produtos">Nimbus Stark<span>R$ 4999</span></label>
+                        <div class="config-bikecraft">
+                            <ul>
+                                <li>
+                                    <img src="img/icones/eletrica.svg">
+                                    <p>Motor Elétrico</p>
+                                </li>
+                                <li>
+                                    <img src="img/icones/carbono.svg">
+                                    <p>Fibra de Carbono</p>
+                                </li>
+                                <li>
+                                    <img src="img/icones/velocidade.svg">
+                                    <p>40 km/h</p>
+                                </li>
+                                <li>
+                                    <img src="img/icones/rastreador.svg">
+                                    <p>Rastreador</p>
+                                </li>
+                            </ul>
+                            <div class="img-bikecraft">
+                                <img src="img/nimbus.jpg" alt="Nimbus Stark">
                             </div>
                         </div>
+                    </div>
 
-                        <div class="item-orcamento">
-                            <label class="bike-escolha seguros">
-                                <input type="radio" name="escolha">
-                                Seguros
-                            </label>
-                        </div>
+                    <div class="orcamento-seguro">
+                        <p class="titulo-orc">Escolha o plano</p>
+                        <input type="radio" id="prata" name="seguro-escolha" value="seguro-prata">
+                        <label for="prata">Prata<span>R$ 199</span></label>
+
+                        <input type="radio" id="ouro" name="seguro-escolha" value="seguro-ouro">
+                        <label for="ouro">Ouro<span>R$ 299</span></label>
                     </div>
                 </form>
+            </div>
 
-                <div class="box-branco ">
+            <form class="box-branco ">
 
-                </div>
+            </form>
             </div>
         </section>
     </main>

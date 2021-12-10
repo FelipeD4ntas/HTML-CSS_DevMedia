@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .container-escolhas {
- display: flex;
- justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .titulo-orc {
@@ -13,7 +13,7 @@
 
 .titulo-orc::before {
     content: '';
-    display: inline-block; 
+    display: inline-block;
     height: 9px;
     width: 4px;
     background: var(--cor04);
@@ -28,6 +28,7 @@ label {
 
 .item-orcamento {
     width: 100%;
+    height: max-content;
 }
 
 .item-orcamento:first-child {
@@ -46,24 +47,10 @@ label {
     margin-bottom: 20px;
 }
 
-.bike-escolha.bikes + input:checked ~ .container-bikes-orc {
-    display: block;
-}
 
+/* QUADRADO CONFIG BIKES */
 
-
-
-
-
-
-
-
-
-
-
-
-
-.container-bikes-orc {
+.orcamento-bikecraft {
     display: none;
 }
 
@@ -74,21 +61,21 @@ label {
     border-radius: 5px;
 }
 
-.config-bike-orc ul {
+.config-bikecraft ul {
     flex: 1 1 47%;
 }
 
-.config-bike-orc ul li {
+.config-bikecraft ul li {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
 }
 
-.config-bike-orc ul li p {
+.config-bikecraft ul li p {
     color: var(--cor06);
 }
 
-.config-bike-orc ul li img {
+.config-bikecraft ul li img {
     height: 18px;
     width: 18px;
     margin-right: 10px;
@@ -98,7 +85,7 @@ label {
     flex: 1 1 53%;
 }
 
-.img-bike-orc img {
+.img-bikecraft img {
     height: 100%;
-   object-fit: cover;
+    object-fit: cover;
 }
