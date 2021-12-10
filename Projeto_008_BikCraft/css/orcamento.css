@@ -1,18 +1,91 @@
 @charset "UTF-8";
+.container-escolhas {
+ display: flex;
+ justify-content: space-between;
+}
+
+.titulo-orc {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.titulo-orc::before {
+    content: '';
+    display: inline-block; 
+    height: 9px;
+    width: 4px;
+    background: var(--cor04);
+    position: absolute;
+    left: -10px;
+    bottom: 26px;
+}
+
+label {
+    border-radius: 5px;
+}
+
+.item-orcamento {
+    width: 100%;
+}
+
+.item-orcamento:first-child {
+    margin-right: 20px;
+}
+
+.bike-escolha {
+    display: inline-block;
+    background: var(--cor02);
+    padding: 15px 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.bike-escolha.produtos {
+    margin-bottom: 20px;
+}
+
+.bike-escolha.bikes + input:checked ~ .container-bikes-orc {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-bikes-orc {
+    display: none;
+}
+
 .config-bike-orc {
-    display: flex;
+    display: none;
     padding: 20px;
     background: var(--cor02);
+    border-radius: 5px;
 }
 
 .config-bike-orc ul {
-    flex: 1 1 50%;
+    flex: 1 1 47%;
 }
 
 .config-bike-orc ul li {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
+}
+
+.config-bike-orc ul li p {
+    color: var(--cor06);
 }
 
 .config-bike-orc ul li img {
@@ -22,10 +95,10 @@
 }
 
 .img-bike-orc {
-    flex: 1 1 50%;
+    flex: 1 1 53%;
 }
 
 .img-bike-orc img {
     height: 100%;
-    object-fit: cover;
+   object-fit: cover;
 }
