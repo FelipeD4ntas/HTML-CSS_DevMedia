@@ -43,16 +43,16 @@
             <div class=" box-contato-orcamento ">
                 <form class="box-preto ">
                     <p class="titulo-orc">Bikcraft ou Seguro?</p>
-                    <input type="radio" name="escolha">
-                    <label class="bike-escolha bikes">Bikcraft</label>
+                    <input type="radio" name="escolha" id="escolha-bikecraft">
+                    <label for="escolha-bikecraft" class="label-bikecraft">Bikcraft</label>
 
-                    <input type="radio" name="escolha">
-                    <label class="bike-escolha seguros">Seguros</label>
+                    <input type="radio" name="escolha" id="escolha-seguro">
+                    <label for="escolha-seguro" class="label-seguro">Seguros</label>
 
                     <div class="orcamento-bikecraft">
                         <p class="titulo-orc">Escolha a sua</p>
-                        <input type="radio" name="bikes" id="bike">
-                        <label class="bike-escolha produtos">Nimbus Stark<span>R$ 4999</span></label>
+                        <input type="radio" name="bikes" id="nimbus">
+                        <label for="nimbus">Nimbus Stark<span>R$ 4999</span></label>
                         <div class="config-bikecraft">
                             <ul>
                                 <li>
@@ -73,7 +73,11 @@
                                 </li>
                             </ul>
                             <div class="img-bikecraft">
-                                <img src="img/nimbus.jpg" alt="Nimbus Stark">
+                                <picture>
+                                    <source media="(max-width: 800px)" srcset="img/nimbus.jpg">
+                                    <source media="(max-width: 916px)" srcset="img/nimbus-home.jpg">
+                                    <img src=" img/nimbus.jpg " alt="Nimbus Stark ">
+                                </picture>
                             </div>
                         </div>
                     </div>
@@ -81,17 +85,16 @@
                     <div class="orcamento-seguro">
                         <p class="titulo-orc">Escolha o plano</p>
                         <input type="radio" id="prata" name="seguro-escolha" value="seguro-prata">
-                        <label for="prata">Prata<span>R$ 199</span></label>
+                        <label for="prata" class="label-prata">Prata<span>R$ 199</span></label>
 
                         <input type="radio" id="ouro" name="seguro-escolha" value="seguro-ouro">
-                        <label for="ouro">Ouro<span>R$ 299</span></label>
+                        <label for="ouro" class="label-ouro">Ouro<span>R$ 299</span></label>
                     </div>
                 </form>
-            </div>
 
-            <form class="box-branco ">
+                <form class="box-branco ">
 
-            </form>
+                </form>
             </div>
         </section>
     </main>
