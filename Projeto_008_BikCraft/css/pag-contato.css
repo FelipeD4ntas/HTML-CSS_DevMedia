@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset"UTF-8";
 
 /* CONTATO */
 
@@ -85,19 +85,19 @@
     flex: 1 1 100%;
 }
 
-.nome-user {
+.label-esquerda {
     padding-right: 10px;
     width: 50%;
 }
 
-.tel-user {
+.label-direita {
     padding-left: 10px;
     width: 50%;
 }
 
-.nome-user,
-.tel-user,
-.email-user,
+.label-esquerda,
+.label-direita,
+.label-completa,
 .area-texto {
     display: flex;
     flex-direction: column;
@@ -238,14 +238,14 @@ textarea:focus {
     .box-branco {
         background: var(--cor02);
     }
-    .item-form.name-email {
+    .item-form.label-dupla {
         flex-direction: column;
     }
-    .tel-user {
+    .label-direita {
         padding-left: 0;
         width: 100%;
     }
-    .nome-user {
+    .label-esquerda {
         padding-right: 0;
         padding-bottom: 20px;
         width: 100%;
@@ -260,6 +260,12 @@ textarea:focus {
     }
     .mapa.sp {
         margin-left: 0;
+    }
+}
+
+@media  (max-width: 1200px) {
+    .box-branco, .box-preto {
+        padding: 30px;
     }
 }
 

@@ -40,18 +40,18 @@
         </section>
 
         <section class="contato-orcamento">
-            <div class=" box-contato-orcamento ">
-                <form class="box-preto ">
+            <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="post" class="box-contato-orcamento">
+                <div class="box-preto">
                     <p class="titulo-orc">Bikcraft ou Seguro?</p>
-                    <input type="radio" name="escolha" id="escolha-bikecraft">
+                    <input type="radio" name="escolha" id="escolha-bikecraft" value="bikecraft">
                     <label for="escolha-bikecraft" class="label-bikecraft">Bikcraft</label>
 
-                    <input type="radio" name="escolha" id="escolha-seguro">
+                    <input type="radio" name="escolha" id="escolha-seguro" value="seguro">
                     <label for="escolha-seguro" class="label-seguro">Seguros</label>
 
                     <div class="orcamento-bikecraft">
                         <p class="titulo-orc">Escolha a sua</p>
-                        <input type="radio" name="bikes" id="nimbus">
+                        <input type="radio" name="bikes" id="nimbus" value="nimbus">
                         <label for="nimbus">Nimbus Stark<span>R$ 4999</span></label>
                         <div class="config-bikecraft">
                             <ul>
@@ -76,7 +76,71 @@
                                 <picture>
                                     <source media="(max-width: 800px)" srcset="img/nimbus.jpg">
                                     <source media="(max-width: 916px)" srcset="img/nimbus-home.jpg">
-                                    <img src=" img/nimbus.jpg " alt="Nimbus Stark ">
+                                    <img src=" img/nimbus.jpg" alt="Nimbus Stark">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="orcamento-bikecraft">
+                        <input type="radio" name="bikes" id="magic" value="magic">
+                        <label for="magic">Magic Might<span>R$ 2499</span></label>
+                        <div class="config-bikecraft">
+                            <ul>
+                                <li>
+                                    <img src="img/icones/eletrica.svg">
+                                    <p>Motor Elétrico</p>
+                                </li>
+                                <li>
+                                    <img src="img/icones/carbono.svg">
+                                    <p>Fibra de Carbono</p>
+                                </li>
+                                <li>
+                                    <img src="img/icones/velocidade.svg">
+                                    <p>45 km/h</p>
+                                </li>
+                                <li>
+                                    <img src="img/icones/rastreador.svg">
+                                    <p>Rastreador</p>
+                                </li>
+                            </ul>
+                            <div class="img-bikecraft">
+                                <picture>
+                                    <source media="(max-width: 800px)" srcset="img/magic.jpg">
+                                    <source media="(max-width: 916px)" srcset="img/magic-home.jpg">
+                                    <img src=" img/magic.jpg" alt="Magic Might">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="orcamento-bikecraft">
+                        <input type="radio" name="bikes" id="nebula" value="nebula">
+                        <label for="nebula">Nebula Cosmic<span>R$ 3999</span></label>
+                        <div class="config-bikecraft">
+                            <ul>
+                                <li>
+                                    <img src="img/icones/eletrica.svg">
+                                    <p>Motor Elétrico</p>
+                                </li>
+                                <li>
+                                    <img src="img/icones/carbono.svg">
+                                    <p>Fibra de Carbono</p>
+                                </li>
+                                <li>
+                                    <img src="img/icones/velocidade.svg">
+                                    <p>40 km/h</p>
+                                </li>
+                                <li>
+                                    <img src="img/icones/rastreador.svg">
+                                    <p>Rastreador</p>
+                                </li>
+                            </ul>
+                            <div class="img-bikecraft">
+                                <picture>
+                                    <source media="(max-width: 800px)" srcset="img/nebula.jpg">
+                                    <source media="(max-width: 916px)" srcset="img/nebula-home.jpg">
+                                    <img src=" img/nebula.jpg" alt="Nebula Cosmic">
                                 </picture>
                             </div>
                         </div>
@@ -90,57 +154,118 @@
                         <input type="radio" id="ouro" name="seguro-escolha" value="seguro-ouro">
                         <label for="ouro" class="label-ouro">Ouro<span>R$ 299</span></label>
                     </div>
-                </form>
+                </div>
 
-                <form class="box-branco ">
+                <div class="box-branco">
+                    <p class="titulo-orc dados-pessoais">Dados Pessoais</p>
+                    <div class="item-form label-dupla">
+                        <div class="label-esquerda">
+                            <label for="user_name">Nome</label>
+                            <input type="text" id="user_name" name="user_name" placeholder="Seu Nome" minlength="3" required>
+                        </div>
+                        <div class="label-direita">
+                            <label for="user_last-name">Sobrenome</label>
+                            <input type="text" id="user_last-name" name="user_last-name" placeholder="Seu Sobrenome" required>
+                        </div>
+                    </div>
 
-                </form>
-            </div>
+                    <div class="item-form label-completa">
+                        <label for="user_cpf">CPF</label>
+                        <input type="text" id="user_cpf" name="user_cpf" placeholder="000.000.000-00" minlength="11" maxlength="14" required>
+                    </div>
+
+                    <div class="item-form label-completa">
+                        <label for="user_email">Email</label>
+                        <input type="email" id="user_email" name="user_email" placeholder="contato@email.com" required>
+                    </div>
+
+                    <p class="titulo-orc dados-pessoais">Entrega</p>
+                    <div class="item-form label-dupla">
+                        <div class="label-esquerda">
+                            <label for="end_cep">CEP</label>
+                            <input type="text" id="end_cep" name="end_cep" placeholder="00000-000" minlength="8" maxlength="8" required>
+                        </div>
+
+                        <div class="label-direita">
+                            <label for="end_numero">Número</label>
+                            <input type="number" id="end_numero" name="end_numero" placeholder="00"> 
+                        </div>
+                    </div>
+
+                    <div class="item-form label-dupla">
+                        <div class="label-esquerda">
+                            <label for="end_logradouro">Logradouro</label>
+                            <input type="text" id="end_logradouro" name="end_logradouro" placeholder="complemento">
+                        </div>
+
+                        <div class="label-direita">
+                            <label for="end_bairro">Bairro</label>
+                            <input type="text" id="end_bairro" name="end_bairro" minlength="3" required>
+                        </div>
+                    </div>
+
+                    <div class="item-form label-dupla">
+                        <div class="label-esquerda">
+                            <label for="end_cidade">Cidade</label>
+                            <input type="text" id="end_cidade" name="end_cidade" required>
+                        </div>
+
+                        <div class="label-direita">
+                            <label for="end_estado">Estado</label>
+                            <input type="text" id="end_estado" name="end_estado" minlength="2" maxlength="2" required>
+                        </div>
+                    </div>
+
+                    <div class="box-botao form-orcamento">
+                        <button type="submit" class="botao form">Solicitar Orçamento</button>
+                    </div>
+                </div>
+            </form>
         </section>
     </main>
 
     <footer>
-        <div class="box-rodape ">
-            <section class="item-rodape logo-rodape ">
-                <img src="img/icones/bikcraft.svg " alt="Logo Bikcraft ">
+        <div class="box-rodape">
+            <section class="item-rodape logo-rodape">
+                <img src="img/icones/bikcraft.svg" alt="Logo Bikcraft">
             </section>
 
-            <section class="item-rodape contato-rodape ">
+            <section class="item-rodape contato-rodape">
                 <h3>Contato</h3>
                 <div>
-                    <a href="tel:+55219999-9999 ">+55 21 9999-9999</a>
-                    <a href="mailto:contato@bikcraft.com ">contato@bikcraft.com</a>
+                    <a href="tel:+55219999-9999">+55 21 9999-9999</a>
+                    <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
                 </div>
-                <div class="endereco ">
+                <div class="endereco">
                     <p>Rua Ali Perto, 42 - Botafogo</p>
                     <p>Rio de Janeiro - RJ</p>
                 </div>
-                <div class="redes-sociais ">
-                    <a href="# " target="_blank " rel="external ">
-                        <img src="img/icones/instagram.svg " alt="instagram ">
+                <div class="redes-sociais">
+                    <a href="#" target="_blank" rel="external">
+                        <img src="img/icones/instagram.svg" alt="instagram">
                     </a>
-                    <a href="# " target="_blank " rel="external ">
-                        <img src="img/icones/facebook.svg " alt="facebook ">
+                    <a href="#" target="_blank" rel="external">
+                        <img src="img/icones/facebook.svg" alt="facebook">
                     </a>
-                    <a href="# " target="_blank " rel="external ">
-                        <img src="img/icones/youtube.svg " alt="youtube ">
+                    <a href="#" target="_blank" rel="external">
+                        <img src="img/icones/youtube.svg" alt="youtube">
                     </a>
                 </div>
             </section>
-            <section class="item-rodape informacoes-rodape ">
+            <section class="item-rodape informacoes-rodape">
                 <h3>Informações</h3>
                 <nav>
-                    <ul class="list-menu-rodape ">
-                        <li><a href="bicicletas.html " target="_self " rel="next ">Bicicletas</a></li>
-                        <li><a href="seguros.html " target="_self " rel="next ">Seguros</a></li>
-                        <li><a href="contato.html " target="_self " rel="next ">Contato</a></li>
-                        <li><a href="termos.html " target="_self " rel="next ">Termos e Condições</a></li>
+                    <ul class="list-menu-rodape">
+                        <li><a href="bicicletas.html" target="_self" rel="next">Bicicletas</a></li>
+                        <li><a href="seguros.html" target="_self" rel="next">Seguros</a></li>
+                        <li><a href="contato.html" target="_self" rel="next">Contato</a></li>
+                        <li><a href="termos.html" target="_self" rel="next">Termos e Condições</a></li>
                     </ul>
                 </nav>
             </section>
         </div>
 
-        <section class="direitos-rodape ">
+        <section class="direitos-rodape">
             <p>Bikcraft &copy; Alguns direitos reservados.</p>
         </section>
     </footer>
