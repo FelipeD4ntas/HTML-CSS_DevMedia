@@ -177,18 +177,11 @@ header {
     padding: 16px;
     border-radius: 5px;
     font-size: 1.8rem;
-    
     color: var(--cor05);
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-}
-
-.botao a {
-    color: var(--cor05);
-    text-transform: uppercase;
-    font-weight: bold;
-    
+    text-align: center;
 }
 
 .botao:hover {
@@ -552,7 +545,7 @@ cite {
     max-width: 185px;
 }
 
-.botao.prata a {
+.botao.prata {
     color: var(--cor02);
 }
 

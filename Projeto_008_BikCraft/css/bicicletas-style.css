@@ -161,22 +161,20 @@
     width: max-content;
     padding: 16px 32px;
     padding-right: 64px;
-}
-
-.botao.sobre a {
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.botao.sobre a::after {
+
+.botao.sobre::after {
     content: url('../img/icones/seta.svg');
     position: absolute;
-    right: -30px;
-    bottom: 2px;
+    right: 32px;
+    bottom: 18px;
     transition: 0.3s;
 }
 
-.botao.sobre:hover a::after {
-    right: -35px;
+.botao.sobre:hover::after {
+    right: 25px;
 }
