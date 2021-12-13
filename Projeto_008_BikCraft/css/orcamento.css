@@ -1,4 +1,6 @@
-    @charset"UTF-8";
+    @charset "UTF-8";
+
+    /* TITULO SOBRE OS INPUT */
     .container-escolhas {
         display: flex;
     }
@@ -20,7 +22,13 @@
         left: -10px;
         bottom: 26px;
     }
+
+    .titulo-orc.dados-pessoais::before {
+        left: -10px;
+        bottom: 20px;
+    }
     
+    /* BOX-PRETO LADO ESQUERDO */
     .box-preto {
         display: flex;
         flex-direction: column;
@@ -75,7 +83,8 @@
         display: flex;
         flex-direction: column;
     }
-    /* QUADRADO CONFIG BIKES */
+
+    /* CARD CONFIG BIKES */
     
     .orcamento-seguro,
     .orcamento-bikecraft {
@@ -140,50 +149,20 @@
         height: 100%;
         object-fit: cover;
     }
-    /* QUADRADO SEGUROS */
+
+    /* CARD SEGUROS */
     
     .orcamento-seguro .label-ouro {
         margin-top: 20px;
     }
 
-    /* DADOS PESSOAIS */
-
-    .titulo-orc.dados-pessoais::before {
-        left: -10px;
-        bottom: 20px;
-    }
-
-    /* BOX-BRANCO */
+     /* BOX-BRANCO LADO DIREITO */
     .titulo-orc.dados-pessoais:nth-of-type(n + 2) {
         margin-top: 20px;
     }
+
     .box-botao.form-orcamento {
         max-width: 260px;
     }
    
-    @media (max-width: 450px){
-        .config-bikecraft {
-            padding: 20px;
-            flex-wrap: wrap;
-        }
-
-        .config-bikecraft ul {
-            flex: 1 1 100%;
-        }
-
-        .img-bikecraft {
-            flex: 1 1 100%;
-            padding-left: 0px;
-            padding-top: 20px;
-        }
-
-    }
-
-    @media (max-width: 329px) {
-        .orcamento-bikecraft label span {
-            float: none;
-            display: none;
-            padding-left: 22px;
-            padding-top: 10px;
-        }
-    }
+    

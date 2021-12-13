@@ -105,10 +105,3 @@
 .check:checked+.desc-pergunta {
     display: block;
 }
-
-@media (max-width: 800px) {
-    /* TOPO */
-    .subtitulo {
-        font-size: 1.6rem;
-    }
-}

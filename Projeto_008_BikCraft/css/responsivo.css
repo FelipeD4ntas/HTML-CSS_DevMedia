@@ -1,8 +1,15 @@
-@charset"UTF-8";
+@charset "UTF-8";
 @media (max-width: 1239px) {
     /* PARCEIROS */
     .item-parceiro {
         flex: 1 1 250px;
+    }
+}
+
+@media  (max-width: 1200px) {
+    /* PÁG CONTATOS */
+    .box-branco, .box-preto {
+        padding: 30px;
     }
 }
 
@@ -14,6 +21,21 @@
     /* FICHA TECNICA BIKE */
     .titulo-relevante.pedale-mais {
         font-size: 4.8rem;
+    }
+}
+
+@media (max-width: 830px) {
+    /* PÁG CONTATO MAPAS LOJAS */
+    .desc-mapa h2 {
+        font-size: 2.4rem;
+    }
+    .rj-contato,
+    .sp-contato {
+        flex-direction: column;
+    }
+    .rj-endereco,
+    .sp-endereco {
+        margin-bottom: 30px;
     }
 }
 
@@ -203,6 +225,27 @@
         padding: 40px 20px;
         flex: 1 1 100%;
     }
+    /* PÁG CONTATO */
+    .box-contato-orcamento {
+        flex-direction: column;
+    }
+    .box-preto {
+        width: 100%;
+        background: var(--cor01);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.137);
+        border-radius: 5px 5px 0 0;
+        padding: 20px;
+    }
+    .box-branco {
+        width: 100%;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.137);
+        border-radius: 0 0 5px 5px;
+        padding: 20px;
+    }
+     /* PÁG SEGUROS TOPO */
+     .subtitulo {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 533px) {
@@ -290,6 +333,110 @@
         padding-right: 0px;
         padding-bottom: 20px;
     }
+    /* PÁG CONTATO */
+    .box-branco {
+        background: var(--cor02);
+    }
+    .item-form.label-dupla {
+        flex-direction: column;
+    }
+    .label-direita {
+        padding-left: 0;
+        width: 100%;
+    }
+    .label-esquerda {
+        padding-right: 0;
+        padding-bottom: 20px;
+        width: 100%;
+    }
+    /* PÁG CONTATO MAPAS LOJAS */
+    .box-lojas-locais {
+        flex-direction: column;
+    }
+    .mapa.rj {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .mapa.sp {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 450px){
+    /* PÁG ORÇAMENTO */
+    .config-bikecraft {
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .config-bikecraft ul {
+        flex: 1 1 100%;
+    }
+
+    .img-bikecraft {
+        flex: 1 1 100%;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    /* MENU MOBILE */
+    .box-menu {
+        align-items: flex-start;
+    }
+
+    .list-menu {
+        display: none;
+    }
+
+    .barra-um, 
+    .barra-dois, 
+    .barra-tres {
+        background-color: white;
+        height: 5px;
+        width: 100%;
+        margin: 6px 0;
+        transition: 0.3s;
+    }
+
+    #menu:checked ~ .barra-um {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    #menu:checked ~ .barra-dois {
+        opacity: 0;
+    }
+
+    #menu:checked ~ .barra-tres {
+        transform: rotate(-45deg) translate(8px, -9px);
+    }
+
+    #menu:checked ~ .list-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 100px;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0%;
+        background: var(--cor01);
+        z-index: 10;
+    }
+
+    #menu:checked ~ .list-menu li {
+       padding: 20px;
+    }
+
+    #menu:checked ~ .list-menu li a {
+        font-size: 2.5rem;
+        padding: 20px;
+     }
+
+    .menu-mobile {
+        width: 40px;
+        height: 30px;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -331,6 +478,20 @@
     }
     .config-bike ul li {
         flex: 1 1 100%;
+    }
+    /* PÁG CONTATO */
+    .box-botao.form {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 329px) {
+    /* PÁG ORÇAMENTO */
+    .orcamento-bikecraft label span {
+        float: none;
+        display: none;
+        padding-left: 22px;
+        padding-top: 10px;
     }
 }
 
