@@ -88,7 +88,7 @@
         margin-right: 20px;
     }
     .titulo-preto {
-        font-size: 3.2rem;
+        font-size: 3rem;
         margin: 0 20px 40px 20px;
     }
     .titulo-link {
@@ -112,7 +112,7 @@
         font-size: 1.8rem;
     }
     .titulo-branco {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
     .link-tec {
         font-size: 2.4rem;
@@ -368,15 +368,17 @@
         padding: 20px;
         flex-wrap: wrap;
     }
-
     .config-bikecraft ul {
         flex: 1 1 100%;
     }
-
     .img-bikecraft {
         flex: 1 1 100%;
         padding-left: 0px;
         padding-top: 20px;
+    }
+    .img-bikecraft img {
+        max-height: 140px;
+        width: 100%;
     }
     /* MENU MOBILE */
     .box-menu {
@@ -425,11 +427,13 @@
 
     #menu:checked ~ .list-menu li {
        padding: 20px;
+       
     }
 
     #menu:checked ~ .list-menu li a {
         font-size: 2.5rem;
         padding: 20px;
+        background: #111111;
      }
 
     .menu-mobile {
