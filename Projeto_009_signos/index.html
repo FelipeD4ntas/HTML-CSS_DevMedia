@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Felipe Dantas">
+    <meta name="description" content="Descubra seu signo de maneira rápida e fácil">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/estilo.css" type="text/css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Signos</title>
+</head>
+
+<body>
+    <div class="fundo"></div>
+    <div class="fundo_2"></div>
+    <main>
+        <h1>Signos</h1>
+        <div class="box-temas">
+            <div class="tema">
+                <p>TEMA 1</p>
+            </div>
+            <div class="tema">
+                <p>TEMA 2</p>
+            </div>
+            <div class="tema">
+                <p>TEMA 3</p>
+            </div>
+            <div class="tema">
+                <p>TEMA 4</p>
+            </div>
+        </div>
+        <p>Descubra seu signo, preenchendo abaixo com sua data de nascimento.</p>
+        <div class="box-input">
+            <div class="item-input">
+                <label for="dia" id="dia_user">Dia:</label>
+                <input type="number" id="dia" name="dia_nasc_user" min="1" max="31">
+            </div>
+            <div class="item-input">
+                <label for="mes" id="mes_user">Mês:</label>
+                <input type="number" id="mes" name="mes_nasc_user" min="1" max="12">
+            </div>
+            <div class="item-input">
+                <label for="ano" id="ano_user">Ano:</label>
+                <input type="number" id="ano" name="ano_nasc_user" min="1900">
+            </div>
+        </div>
+        <div class="box-botoes">
+            <button>Clique AQUI</button>
+        </div>
+        <div id="box-saida"></div>
+        <div id="aviso"></div>
+        <div id="box-status"></div>
+        <div class="box-imagens">
+            <div class="box-sobre"></div>
+        </div>
+    </main>
+    <script type="module" src="js/script.js"></script>
+</body>
+
+</html>
