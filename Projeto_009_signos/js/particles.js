@@ -188,7 +188,6 @@ var pJS = function(tag_id, params) {
     };
 
     pJS.fn.canvasSize = function() {
-
         pJS.canvas.el.width = pJS.canvas.w;
         pJS.canvas.el.height = pJS.canvas.h;
 
@@ -1101,7 +1100,7 @@ var pJS = function(tag_id, params) {
         if (pJS.interactivity.events.onclick.enable) {
 
             pJS.interactivity.el.addEventListener('click', function() {
-
+                
                 pJS.interactivity.mouse.click_pos_x = pJS.interactivity.mouse.pos_x;
                 pJS.interactivity.mouse.click_pos_y = pJS.interactivity.mouse.pos_y;
                 pJS.interactivity.mouse.click_time = new Date().getTime();

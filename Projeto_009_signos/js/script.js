@@ -32,7 +32,6 @@ import retornaDetalhesSigno from './funçãoRetornaDetalhes.js';
 
 
 function clicou() {
-    fundoInterativo();
     let datas = {
         dia: document.getElementById('dia').value,
         mes: document.getElementById('mes').value,

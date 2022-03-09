@@ -21,7 +21,7 @@ particlesJS('particles-js',
                 enable: true,
                 outMode: "bounce",
                 random: false,
-                speed: 0.2,
+                speed: 0.12,
                 straight: false,
             },
             number: {
@@ -32,7 +32,7 @@ particlesJS('particles-js',
                 value: 80,
             },
             opacity: {
-                value: 0.2,
+                value: 0.3,
             },
             shape: {
                 type: "star",
