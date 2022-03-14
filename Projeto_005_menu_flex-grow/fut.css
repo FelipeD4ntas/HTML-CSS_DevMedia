@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+h1 {
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: right;
+    background: black;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+
+#img-header {
+    margin-right: 150px;
+}
+
+#titulo {
+    background: #F15048;
+    max-width: 740px;
+    height: 350px;
+    padding: 40px 30px;
+    margin: 0 calc((100% - 1140px) / 2);
+    position: absolute;
+    bottom: -250px;
+    left: 0;
+}
+
+#titulo>h1 {
+    font-size: 6rem;
+    color: white;
+    text-align: left;
+    line-height: 7rem;
+}
+
+.box-artigos {
+    margin-top: 300px;
+}
+
+.corpo-primeito-art {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 calc((100% - 1140px) / 2);
+}
+
+.item-art {
+    margin-right: 40px;
+    max-width: 640px;
+}
+
+.item-art h1 {
+    font-size: 3.5rem;
+}
+
+.item-art p {
+    font-size: 1.7rem;
+    line-height: 2.9rem;
+    margin: 30px 0;
+}
+
+.item-art:nth-child(2)>h1,
+.item-art:nth-child(2)>p {
+    text-align: right;
+}
+
+.imagens-primeiro-art {
+    position: relative;
+}
+
+#jogador-um {
+    filter: grayscale();
+}
+
+#circulo {
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    height: 500px;
+    z-index: -1;
+}
+
+#jogador-dois {
+    position: relative;
+    max-height: 600px;
+    max-width: 500px;
+}
+
+.corpo-segundo-art {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px calc((100% - 1140px) / 2);
+    background: #f2f2f2;
+}
+
+#jogadores-img {
+    width: 570px;
+    height: 375px;
+    margin: 60px 0;
+}
