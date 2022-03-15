@@ -32,13 +32,13 @@
         background-position: center;
         background-size: cover;
     }
-
+    
     .item:hover {
         flex-grow: 10;
         filter: grayscale(0%);
         -webkit-filter: grayscale(0%);
     }
-
+    
     .item .link {
         text-transform: uppercase;
         font-weight: bold;
@@ -47,7 +47,7 @@
         font-size: 0;
         transition: all .5s ease-in-out;
     }
-
+    
     .item:hover .link {
         font-size: 3.2rem;
         text-shadow: 2px 2px 12px black;
@@ -58,7 +58,7 @@
     }
     
     .natacao {
-        background-image: url("img/item2.png");  
+        background-image: url("img/item2.png");
     }
     
     .basquete {
@@ -66,14 +66,13 @@
     }
     
     .corrida {
-        background-image: url("img/item4.png");  
+        background-image: url("img/item4.png");
     }
-
+    
     @media screen and (max-width: 768px) {
         .box-lista {
             flex-direction: column;
         }
-
         .item .link {
             font-size: 2rem;
         }
