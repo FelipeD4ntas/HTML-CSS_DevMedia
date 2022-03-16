@@ -220,65 +220,19 @@
     }
     .corpo-terceiro-art {
         padding: 90px calc((100% - 520px) / 2);
-        display: block;
     }
     .corpo-quarto-art {
         padding: 100px calc((100% - 520px) / 2);
-        display: flex;
         flex-direction: column;
-        background: black;
-        color: white
     }
     .corpo-quinto-art {
         padding: 30px calc((100% - 520px) / 2);
         padding-bottom: 0;
-        display: flex;
-        flex-direction: column;
-        position: relative;
-    }
-    .box-neymar {
-        height: 400px;
-        max-width: 100%;
-        order: 2;
-    }
-    .corpo-quarto-art>.item-art p:nth-child(2) {
-        text-align: left;
-    }
-    .item-art:first-child {
-        margin-right: 0px;
-    }
-    .item-art h1 {
-        font-size: 3rem;
-    }
-    .item-art p {
-        font-size: 1.7rem;
-    }
-    .segundo-art {
-        max-width: 100%;
-    }
-    .segundo-art p:nth-child(2) {
-        margin-bottom: 0px;
-    }
-    .curiosidade {
-        max-width: 500px;
-    }
-    .futebol-aristocrata {
-        width: 100%;
-        height: 475px;
-        background-size: cover;
-        background-position: top center;
-        margin-right: 0px;
-        margin-bottom: 40px;
-    }
-    .aristocrata {
-        max-width: 800px;
     }
     .aristocrata h1 {
         text-align: left !important;
     }
     .box-paragrafos {
-        display: flex;
-        justify-content: space-between;
         flex-direction: column;
     }
     .paragrafos {
@@ -286,76 +240,177 @@
         flex: 1;
     }
     .paragrafos:first-child {
-        margin-right: 40px;
+        margin-right: 0;
+    }
+    .paragrafos p:first-child {
+        margin-bottom: 0;
     }
     .fut-ingles:first-child {
         margin-right: 0px;
     }
-    blockquote {
-        font-size: 1.4rem;
-        padding: 30px 0 30px 30px;
-        line-height: 2.5rem;
-        position: relative
-    }
-    blockquote::before {
-        content: '';
-        display: block;
-        width: 8px;
-        height: 100px;
-        background: #F15048;
-        position: absolute;
-        left: 0px;
-    }
-    .cit-neymar {
-        font-weight: bold;
-    }
-    .cit-neymar:before {
-        height: 78px;
-    }
     #jogador-dois {
         display: none;
     }
-    #jogadores-img {
-        width: 100%;
-        height: 375px;
-        margin: 60px 0;
-        object-fit: cover;
+}
+
+@media(max-width: 600px) {
+    #img-header {
+        max-width: 400px;
     }
-    #futebol-ingles {
-        width: 100%;
-        max-height: 400px;
-        object-fit: cover;
-        object-position: center top;
+    #titulo {
+        max-width: 350px;
+        height: 300px;
+        margin: 0 calc((100% - 350px) / 2);
+        left: 0;
+    }
+    #titulo h1 {
+        font-size: 3rem;
+        text-align: center;
+        line-height: 5rem;
+    }
+    #circulo {
+        bottom: 120px;
+        max-height: 250px;
+    }
+    #circulo-um {
+        right: 200px;
+        max-height: 300px;
+    }
+    #circulo_dois {
+        right: 20px;
+        bottom: -140px;
+        height: 140px;
+        width: 135px;
+    }
+    #circulo-tres {
+        height: 300px;
+        left: 30px;
+    }
+    .corpo-primeito-art {
+        padding: 40px calc((100% - 350px) / 2);
+    }
+    .corpo-segundo-art {
+        padding: 90px calc((100% - 350px) / 2);
+        padding-bottom: 300px;
+    }
+    .corpo-terceiro-art {
+        padding: 90px calc((100% - 350px) / 2);
+    }
+    .corpo-quarto-art {
+        padding: 100px calc((100% - 350px) / 2);
+    }
+    .corpo-quinto-art {
+        padding: 30px calc((100% - 350px) / 2);
+        padding-bottom: 0;
+    }
+    .curiosidade {
+        bottom: -30px;
+        max-width: 350px;
     }
     #neymar {
+        height: 300px;
+    }
+}
+
+@media(max-width: 400px) {
+    #img-header {
+        max-width: 100%;
         height: 400px;
-        width: 100%;
-        object-fit: contain;
-        object-position: top center;
+        object-fit: cover;
     }
-    .brasil {
-        order: 1;
-        margin: 0 auto;
-        margin-top: 40px;
+    #titulo {
+        max-width: 330px;
+        margin: 0 calc((100% - 330px) / 2);
+        padding: 25px 30px;
     }
-    .brasil>p,
-    .brasil>h1 {
-        text-align: left !important;
-    }
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100px;
-        background-color: #333333;
-    }
-    footer p {
-        color: white;
+    #titulo h1 {
+        font-size: 3rem;
         text-align: center;
-        font-size: 1.8rem;
+        line-height: 5rem;
     }
-    footer span {
-        color: #F15048;
-        font-weight: bold;
+    #circulo {
+        bottom: 120px;
+        max-height: 200px;
+    }
+    #circulo-um {
+        right: 0;
+        top: 10px;
+        max-height: 360px;
+    }
+    .corpo-primeito-art {
+        padding: 40px calc((100% - 330px) / 2);
+    }
+    .corpo-segundo-art {
+        padding: 90px calc((100% - 330px) / 2);
+        padding-bottom: 300px;
+    }
+    .corpo-terceiro-art {
+        padding: 90px calc((100% - 330px) / 2);
+    }
+    .corpo-quarto-art {
+        padding: 100px calc((100% - 330px) / 2);
+    }
+    .corpo-quinto-art {
+        padding: 30px calc((100% - 330px) / 2);
+        padding-bottom: 0;
+    }
+    #jogador-um {
+        max-height: 350px;
+    }
+    blockquote {
+        font-size: 1.4rem;
+        padding: 30px;
+    }
+    blockquote::before {
+        height: 130px;
+    }
+    .cit-neymar:before {
+        height: 130px;
+    }
+}
+
+@media(max-width: 280px) {
+    #titulo {
+        max-width: 270px;
+        margin: 0 calc((100% - 330px) / 2);
+        padding: 10px;
+        left: 30px;
+    }
+    #titulo h1 {
+        line-height: 4.5rem;
+    }
+    #circulo-um {
+        max-height: 280px;
+    }
+    #circulo_dois {
+        display: none;
+    }
+    #circulo-tres {
+        height: 220px;
+        left: 30px;
+    }
+    .corpo-primeito-art {
+        padding: 40px calc((100% - 260px) / 2);
+    }
+    .corpo-segundo-art {
+        padding: 90px calc((100% - 260px) / 2);
+        padding-bottom: 300px;
+    }
+    .corpo-terceiro-art {
+        padding: 90px calc((100% - 260px) / 2);
+    }
+    .corpo-quarto-art {
+        padding: 100px calc((100% - 260px) / 2);
+    }
+    .corpo-quinto-art {
+        padding: 30px calc((100% - 260px) / 2);
+        padding-bottom: 0;
+    }
+    #jogador-um {
+        max-height: 350px;
+    }
+    .curiosidade {
+        bottom: -45px;
+        max-width: 280px;
     }
 }

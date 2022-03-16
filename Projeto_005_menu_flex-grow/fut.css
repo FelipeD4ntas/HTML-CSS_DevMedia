@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+body {
+    overflow-x: hidden;
+}
 h1 {
     font-weight: normal;
     font-family: 'Roboto', sans-serif;
@@ -15,9 +18,18 @@ header {
     padding-top: 50px;
     display: flex;
     justify-content: right;
+    position: relative;
 }
 
-.box-topo img {
+#voltar {
+    max-width: 40px;
+    max-height: 40px;
+    filter: invert(100%);
+    position: absolute;
+    left: 100px;                        
+}
+
+#img-header {
     max-width: 950px;
     max-height: 760px;
     filter: grayscale(80%);
@@ -52,7 +64,7 @@ header {
 #circulo-um {
     position: absolute;
     filter: none;
-    right: 30px;
+    right: 200px;
     transition: all 1s;
     max-height: 660px;
 }
