@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+header {
+    height: 90vh;
+    position: relative;
+    background: #42B9DF;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo-gif {
+    height: 100%;
+    width: 100%;
+    background-image: url('../natacao/agua.gif');
+    background-size: cover;
+    background-position: fixed;
+    position: absolute;
+    top: 0;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+#titulo {
+    border: 1px solid white;
+    background: transparent;
+    max-width: 740px;
+    padding: 40px 30px;
+}
+
+.artigos {
+    padding: 0 calc((100% - 1140px) / 2);
+}
+
+#titulo h1 {
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+    line-height: 7rem;
+}
+
+.primeiro-artigo {
+    background-image: linear-gradient( to bottom, #42B9DF 35%, white 25%, white 63%, #42B9DF 0%, #42B9DF);
+}
+
+.box-img-atletas {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+.box-img-atletas img {
+    padding: 20px;
+}
+
+#atleta-um {
+    width: 560px;
+    max-height: 450px;
+    object-fit: cover;
+    padding-left: 0;
+}
+
+#atleta-dois {
+    width: 455px;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+#atleta-tres {
+    width: 245px;
+    max-height: 450px;
+    object-fit: cover;
+    padding-right: 0;
+}

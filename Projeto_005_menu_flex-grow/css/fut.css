@@ -2,6 +2,7 @@
 body {
     overflow-x: hidden;
 }
+
 h1 {
     font-weight: normal;
     font-family: 'Roboto', sans-serif;
@@ -21,12 +22,24 @@ header {
     position: relative;
 }
 
-#voltar {
-    max-width: 40px;
-    max-height: 40px;
-    filter: invert(100%);
+#btn-voltar {
+    width: 40px;
+    cursor: pointer;
     position: absolute;
-    left: 100px;                        
+    left: 50px;
+    animation: jumping 1s linear infinite;
+}
+
+@keyframes jumping {
+    from {
+        transform: translateX(-15px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-15px);
+    }
 }
 
 #img-header {
@@ -171,7 +184,7 @@ header {
 .futebol-aristocrata {
     width: 375px;
     height: 575px;
-    background-image: url('futebol/futebol-aristocrata.jpg');
+    background-image: url('../futebol/futebol-aristocrata.jpg');
     background-size: cover;
     background-position: center;
     margin-right: 40px;

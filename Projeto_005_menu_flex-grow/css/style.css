@@ -54,19 +54,19 @@
     }
     
     .futebol {
-        background-image: url("img/item1.png");
+        background-image: url("../img/item1.png");
     }
     
     .natacao {
-        background-image: url("img/item2.png");
+        background-image: url("../img/item2.png");
     }
     
     .basquete {
-        background-image: url("img/item3.png");
+        background-image: url("../img/item3.png");
     }
     
     .corrida {
-        background-image: url("img/item4.png");
+        background-image: url("../img/item4.png");
     }
     
     @media screen and (max-width: 768px) {
