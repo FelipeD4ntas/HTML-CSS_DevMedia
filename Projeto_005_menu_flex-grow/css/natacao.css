@@ -6,7 +6,7 @@
 }
 h1 {
     font-size: 3.5rem;
-    color: white;
+    color: #fafafa;;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.336);
 }
 header {
@@ -55,7 +55,6 @@ header {
     background-image: url('../natacao/piscina-top.png');
     background-size: cover;
     background-attachment: fixed;
-
 }
 
 .segundo-artigo {
@@ -101,7 +100,7 @@ header {
 .box-itens-artigo {
     display: flex;
     justify-content: space-between;
-    color: white;
+    color: #fafafa;
     padding-bottom: 50px;
 }
 
@@ -125,7 +124,9 @@ header {
 }
 
 .background-terceiro-art {
-    background: rgba(255, 255, 255, 0.13);
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    background: #1d7491e3;
+    border-radius: 10px;
     padding: 30px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
 }
@@ -136,6 +137,7 @@ header {
     align-content: space-evenly;
     flex-wrap: wrap;
     margin-left: 20px;
+    color: rgb(32, 32, 32);
     position: relative;
 }
 
@@ -155,9 +157,6 @@ header {
     transition: all 1s;
 }
 
-
-
-
 .face {
     border: none;
     width: 100%;
@@ -169,7 +168,6 @@ header {
 }
 
 #front {
-    background: #42b8df6e;
     position: absolute;
     backface-visibility: hidden;
 }
@@ -191,7 +189,7 @@ header {
 #back {
     padding: 20px;
     backface-visibility: hidden;
-    background: #583cd46e;
+    background: #1d7491e3;
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
 }
@@ -201,3 +199,18 @@ header {
     
 }
 
+.nado-peito {
+    background: #3D97F56e;
+}
+
+.nado-costa {
+    background: #3BEBB66e;
+}
+
+.nado-crawl {
+    background: #3BEBB66e;
+}
+
+.nado-borboleta {
+    background: #3D97F56e;
+}
