@@ -4,11 +4,14 @@
     font-weight: normal;
     font-family: 'Roboto', sans-serif;
 }
-h1 {
+
+h1,
+h2 {
     font-size: 3.5rem;
-    color: #fafafa;;
+    color: #fafafa;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.336);
 }
+
 header {
     height: 100vh;
     position: relative;
@@ -48,7 +51,7 @@ header {
 }
 
 .artigos {
-    padding: 0 calc((100% - 1140px) / 2);
+    padding: 100px calc((100% - 1140px) / 2);
 }
 
 .primeiro-artigo {
@@ -58,7 +61,18 @@ header {
 }
 
 .segundo-artigo {
-    background-image: linear-gradient( to bottom, #42B9DF 35%, white 25%, white 63%, #42B9DF 0%, #42B9DF);
+    background-image: linear-gradient( to bottom, #42B9DF 35%, white 35%, white 49%, #42B9DF 0%, #42B9DF);
+    padding-top: 50px;
+}
+
+.segundo-artigo h1 {
+    margin-top: 10px;
+    padding-bottom: 0;
+}
+
+.segundo-artigo h2 {
+    margin-top: 10px;
+    font-size: 2.5rem;
 }
 
 .terceiro-artigo {
@@ -70,7 +84,6 @@ header {
 .box-img-atletas {
     display: flex;
     justify-content: space-between;
-    padding: 100px 0;
 }
 
 .box-img-atletas img {
@@ -97,11 +110,18 @@ header {
     padding-right: 0;
 }
 
+#primeiras-atletas {
+    margin-top: 30px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.445);
+}
+
 .box-itens-artigo {
     display: flex;
     justify-content: space-between;
     color: #fafafa;
-    padding-bottom: 50px;
 }
 
 .item-artigo {
@@ -123,7 +143,8 @@ header {
     padding-top: 50px;
 }
 
-.background-terceiro-art {
+.background-terceiro-art,
+.cont-primeiro-art {
     text-shadow: 0 0 0 rgba(0, 0, 0, 0);
     background: #1d7491e3;
     border-radius: 10px;
@@ -172,7 +193,6 @@ header {
     backface-visibility: hidden;
 }
 
-
 #front p {
     text-align: center;
     font-family: 'Concert One', cursive;
@@ -196,7 +216,6 @@ header {
 
 #back p {
     font-size: 1.8rem;
-    
 }
 
 .nado-peito {
