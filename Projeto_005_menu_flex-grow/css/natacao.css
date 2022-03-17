@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+* {
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.336);
+}
 header {
-    height: 90vh;
+    height: 100vh;
     position: relative;
     background: #42B9DF;
     opacity: 0.8;
@@ -26,21 +36,36 @@ header {
     background: transparent;
     max-width: 740px;
     padding: 40px 30px;
+    background: rgba(255, 255, 255, 0.137);
+}
+
+#titulo h1 {
+    font-size: 6rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    line-height: 7rem;
 }
 
 .artigos {
     padding: 0 calc((100% - 1140px) / 2);
 }
 
-#titulo h1 {
-    font-size: 6rem;
-    color: white;
-    text-align: center;
-    line-height: 7rem;
+.primeiro-artigo {
+    background-image: url('../natacao/piscina-top.png');
+    background-size: cover;
+    background-attachment: fixed;
+
 }
 
-.primeiro-artigo {
+.segundo-artigo {
     background-image: linear-gradient( to bottom, #42B9DF 35%, white 25%, white 63%, #42B9DF 0%, #42B9DF);
+}
+
+.terceiro-artigo {
+    background-image: url('../natacao/piscina-bottom.png');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .box-img-atletas {
@@ -72,3 +97,107 @@ header {
     object-fit: cover;
     padding-right: 0;
 }
+
+.box-itens-artigo {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.item-artigo {
+    max-width: 640px;
+}
+
+.item-artigo:first-child {
+    padding-right: 30px;
+}
+
+.item-artigo p {
+    padding-top: 20px;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.336);
+}
+
+.cont-terceiro-art {
+    padding-top: 50px;
+}
+
+.background-terceiro-art {
+    background: rgba(255, 255, 255, 0.13);
+    padding: 30px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
+}
+
+.box-cards {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    position: relative;
+}
+
+.cont-card {
+    width: max-content;
+    height: max-content;
+}
+
+.cards {
+    width: 230px;
+    height: 200px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+
+
+
+.face {
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.473);
+    border-radius: 10px;
+    position: absolute;
+}
+
+#front {
+    background: #42b8df6e;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
+#front p {
+    text-align: center;
+    font-family: 'Concert One', cursive;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#front img {
+    width: 100px;
+    height: 80px;
+    padding: 10px;
+}
+
+#back {
+    padding: 20px;
+    backface-visibility: hidden;
+    background: #583cd46e;
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+#back p {
+    font-size: 1.8rem;
+    
+}
+
