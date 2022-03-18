@@ -5,8 +5,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
-h1,
-h2 {
+h1 {
     font-size: 3.5rem;
     color: #fafafa;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.336);
@@ -50,6 +49,27 @@ header {
     line-height: 7rem;
 }
 
+#btn-voltar {
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    animation: jumping 1s linear infinite;
+}
+
+@keyframes jumping {
+    from {
+        transform: translateX(-15px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-15px);
+    }
+}
+
 .artigos {
     padding: 100px calc((100% - 1140px) / 2);
 }
@@ -79,6 +99,10 @@ header {
     background-image: url('../natacao/piscina-bottom.png');
     background-size: cover;
     background-attachment: fixed;
+}
+
+.quarto-artigo {
+    background: #42B9DF;
 }
 
 .box-img-atletas {
@@ -121,7 +145,6 @@ header {
 .box-itens-artigo {
     display: flex;
     justify-content: space-between;
-    color: #fafafa;
 }
 
 .item-artigo {
@@ -133,6 +156,7 @@ header {
 }
 
 .item-artigo p {
+    color: #fafafa;
     padding-top: 20px;
     font-size: 1.8rem;
     line-height: 2.9rem;
@@ -141,6 +165,18 @@ header {
 
 .cont-terceiro-art {
     padding-top: 50px;
+}
+
+.box-curiosidades {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: white;
+}
+
+.curiosidade h1, 
+.curiosidade p {
+    color: rgb(32, 32, 32);
+    text-shadow: none;
 }
 
 .background-terceiro-art,
@@ -232,4 +268,53 @@ header {
 
 .nado-borboleta {
     background: #3D97F56e;
+}
+
+.box-maria {
+    justify-content: left;
+}
+
+.box-img-maria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.box-img-maria p {
+    font-family: 'Concert One', cursive;
+    font-size: 2.5rem;
+    color: rgb(32, 32, 32);
+    padding: 0;
+}
+
+#maria {
+    max-height: 700px;
+    justify-self: left;
+    z-index: 2;
+}
+
+#circulo {
+    max-width: 300px;
+    position: absolute;
+    right: 0;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    background-color: white;
+}
+
+footer p {
+    color: rgb(32, 32, 32);
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+footer span {
+    color: #F15048;
+    font-weight: bold;
 }
