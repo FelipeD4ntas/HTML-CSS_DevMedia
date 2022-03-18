@@ -1,0 +1,246 @@
+@media (max-width: 1200px) {
+    .artigos {
+        padding: 100px calc((100% - 960px) / 2);
+    }
+    .primeiro-art {
+        flex: 1;
+    }
+    .cont-terceiro-art {
+        display: block;
+        padding-top: 0;
+    }
+    .background-terceiro-art {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .box-cards {
+        max-width: 100%;
+        margin: 0;
+    }
+    .box-curiosidades {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media(max-width: 990px) {
+    .artigos {
+        padding: 100px calc((100% - 730px) / 2);
+    }
+    .item-artigo {
+        max-width: 100%;
+    }
+    .item-artigo:first-child {
+        padding: 30px 0;
+    }
+    .cont-terceiro-art .item-artigo:first-child {
+        padding: 30px;
+    }
+    .box-primeiro-art {
+        display: block;
+    }
+    .box-itens-artigo {
+        flex-wrap: wrap;
+    }
+    .segundo-artigo {
+        background-image: linear-gradient( to bottom, #42B9DF 25%, white 25%, white 39%, #42B9DF 0%, #42B9DF);
+    }
+    #atleta-tres {
+        display: none;
+    }
+    .box-cards {
+        justify-content: center;
+    }
+    .cont-card {
+        margin: 20px;
+    }
+    .cards {
+        width: 250px;
+        height: 220px;
+    }
+    .box-curiosidades {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .box-maria {
+        justify-content: center;
+    }
+    .cont-maria {
+        max-width: 100%;
+    }
+    .box-img-maria {
+        max-width: 100%;
+        max-height: 300px;
+    }
+    #circulo {
+        max-width: 250px;
+        position: absolute;
+        right: 90px;
+    }
+    #maria {
+        max-height: 300px;
+        position: relative;
+    }
+}
+
+@media(max-width: 760px) {
+    #titulo {
+        max-width: 540px;
+        padding: 40px 30px;
+    }
+    #titulo h1 {
+        font-size: 5rem;
+    }
+    .artigos {
+        padding: 100px calc((100% - 520px) / 2);
+    }
+    .nado-peito {
+        background: #3D97F56e;
+    }
+    .nado-costa {
+        background: #3BEBB66e;
+    }
+    .nado-crawl {
+        background: #3D97F56e;
+    }
+    .nado-borboleta {
+        background: #3BEBB66e;
+    }
+    .box-curiosidades {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    #atleta-um {
+        width: 100%;
+        padding-right: 0;
+    }
+    #atleta-dois {
+        display: none;
+    }
+    .cont-card {
+        width: 100%;
+    }
+    .cards {
+        width: 100%;
+    }
+    #back p {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 3rem;
+    }
+    #titulo {
+        max-width: 440px;
+    }
+    #titulo h1 {
+        font-size: 4rem;
+    }
+    .artigos {
+        padding: 100px calc((100% - 350px) / 2);
+    }
+    .item-artigo:first-child {
+        padding: 0;
+    }
+    .segundo-artigo {
+        background-image: linear-gradient( to bottom, #42B9DF 25%, white 25%, white 34%, #42B9DF 0%, #42B9DF);
+    }
+    .box-curiosidades {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .item-artigo p {
+        font-size: 1.5rem;
+        line-height: 2.7rem;
+    }
+    .cont-card {
+        width: 100%;
+    }
+    .cards {
+        width: 100%;
+        height: 150px;
+    }
+    #front p {
+        font-size: 2.5rem;
+    }
+    #back p {
+        font-size: 1.6rem;
+    }
+    #circulo {
+        max-width: 200px;
+    }
+    #maria {
+        max-height: 230px;
+    }
+}
+
+@media(max-width: 400px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    #titulo {
+        max-width: 100%;
+    }
+    #titulo h1 {
+        font-size: 3.8rem;
+        line-height: 6rem;
+    }
+    .artigos {
+        padding: 100px calc((100% - 330px) / 2);
+    }
+    .box-curiosidades {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+@media(max-width: 280px) {
+    h1 {
+        font-size: 2.3rem;
+    }
+    #titulo {
+        max-width: 100%;
+    }
+    #titulo h1 {
+        font-size: 3rem;
+        line-height: 5rem;
+    }
+    .artigos {
+        padding: 50px calc((100% - 330px) / 2);
+    }
+    .cont-primeiro-art {
+        padding: 0px;
+        border-radius: 0;
+    }
+    .segundo-artigo {
+        background: #42B9DF;
+    }
+    .item-artigo,
+    .cont-primeiro-art h1,
+    .segundo-artigo h1,
+    .item-artigo,
+    .cont-terceiro-art .item-artigo:first-child,
+    .item-artigo:first-child,
+    .cont-quarto-art h1 {
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 0;
+    }
+    .box-curiosidades,
+    .cont-primeiro-art,
+    .quarto-artigo {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .box-img-maria {
+        padding-top: 20px;
+    }
+    #circulo {
+        max-width: 150px;
+    }
+    #maria {
+        max-height: 150px;
+    }
+}

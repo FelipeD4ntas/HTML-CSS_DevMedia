@@ -90,11 +90,6 @@ header {
     padding-bottom: 0;
 }
 
-.segundo-artigo h2 {
-    margin-top: 10px;
-    font-size: 2.5rem;
-}
-
 .terceiro-artigo {
     background-image: url('../natacao/piscina-bottom.png');
     background-size: cover;
@@ -103,6 +98,52 @@ header {
 
 .quarto-artigo {
     background: #42B9DF;
+}
+
+.box-itens-artigo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-artigo {
+    max-width: 640px;
+}
+
+.item-artigo:first-child {
+    padding-right: 30px;
+}
+
+.item-artigo p {
+    color: #fafafa;
+    padding-top: 20px;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.336);
+}
+
+.cont-terceiro-art {
+    padding-top: 50px;
+}
+
+.background-terceiro-art,
+.cont-primeiro-art {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    background: #1d7491e3;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
+}
+
+.box-curiosidades {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: white;
+}
+
+.curiosidade h1,
+.curiosidade p {
+    color: rgb(32, 32, 32);
+    text-shadow: none;
 }
 
 .box-img-atletas {
@@ -140,52 +181,6 @@ header {
     object-fit: cover;
     object-position: center;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.445);
-}
-
-.box-itens-artigo {
-    display: flex;
-    justify-content: space-between;
-}
-
-.item-artigo {
-    max-width: 640px;
-}
-
-.item-artigo:first-child {
-    padding-right: 30px;
-}
-
-.item-artigo p {
-    color: #fafafa;
-    padding-top: 20px;
-    font-size: 1.8rem;
-    line-height: 2.9rem;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.336);
-}
-
-.cont-terceiro-art {
-    padding-top: 50px;
-}
-
-.box-curiosidades {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: white;
-}
-
-.curiosidade h1, 
-.curiosidade p {
-    color: rgb(32, 32, 32);
-    text-shadow: none;
-}
-
-.background-terceiro-art,
-.cont-primeiro-art {
-    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
-    background: #1d7491e3;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.267);
 }
 
 .box-cards {
@@ -291,6 +286,7 @@ header {
 #maria {
     max-height: 700px;
     justify-self: left;
+    position: relative;
     z-index: 2;
 }
 
