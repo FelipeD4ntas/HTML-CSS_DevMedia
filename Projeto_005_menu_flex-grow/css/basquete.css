@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+p, 
+li {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: rgb(36, 36, 36);
+    padding-top: 20px;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: rgb(36, 36, 36);
+}
+
+span {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: rgb(230, 230, 230);
+}
+
+
+header {
+    height: 100vh;
+    position: relative;
+    background-image: url('../basquete/bg-top.webp');
+    background-position: center center;
+    background-size: cover;
+}
+
+.box-titulo {
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 100px calc((100% - 1140px) / 2);
+}
+
+#titulo {
+    border: 1px solid white;
+    max-width: 540px;
+    height: max-content;
+    padding: 40px 30px;
+    background: rgba(255, 112, 43, 0.250);
+}
+
+#titulo h1 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    line-height: 5rem;
+}
+
+#btn-voltar {
+    filter: invert(100%);
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    animation: jumping 1s linear infinite;
+}
+
+@keyframes jumping {
+    from {
+        transform: translateX(-15px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-15px);
+    }
+}
+
+.artigos {
+    padding: 100px calc((100% - 1140px) / 2);
+}
+
+.cont-artigo {
+    max-width: 640px;
+}
+
+.artigo-um {
+    background-color: rgb(255, 112, 43);
+    background-image: url('../basquete/bg-jogador.jpg');
+    background-attachment: fixed;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.artigo-dois {
+    background-image: url('../basquete/body-bg.webp');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.artigo-tres {
+    display: flex;
+    justify-content: right;
+    background-color: rgb(255, 112, 43);
+    background-image: url('../basquete/bg-jogador-dois.jpg');
+    background-attachment: fixed;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.artigo-quatro,
+.artigo-cinco {
+    display: flex;
+    justify-content: space-between;
+}
+
+.artigo-cinco {
+    align-items: flex-end;
+}
+
+.quinto-art {
+    max-width: 700px;
+}
+
+.atleta-dois {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.atleta-dois img {
+    max-width: 500px;
+    object-fit: contain;
+}
+
+#circulo {
+    transition: all 0.5s;
+    position: absolute;
+    max-width: 320px;
+    right: 40px;
+    z-index: -1;
+}
+
+.box-cont-artigo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cont-segundo-art {
+    background: rgb(255, 112, 43);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#historia-basquete {
+    margin-top: 30px;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.445);
+}
+
+.cont-artigo:first-child {
+    padding-right: 30px;
+}
+
+.box-curiosidades {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('../basquete/body-bg.webp');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.curiosidade h1, 
+.curiosidade p {
+    color: rgb(230, 230, 230);
+    text-shadow: none;
+}
+
+#magic-paula {
+    max-width: 400px;
+    height: 510px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    background-color: #333333;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    padding-top: 0;
+}
+
+footer span {
+    color: #F15048;
+    font-weight: bold;
+    font-size: 1.8rem;
+}

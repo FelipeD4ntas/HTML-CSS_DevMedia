@@ -287,7 +287,10 @@ header {
     max-height: 700px;
     justify-self: left;
     position: relative;
+<<<<<<< Updated upstream
     z-index: 2;
+=======
+>>>>>>> Stashed changes
 }
 
 #circulo {
@@ -308,9 +311,11 @@ footer p {
     color: rgb(32, 32, 32);
     text-align: center;
     font-size: 1.8rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 footer span {
     color: #F15048;
     font-weight: bold;
+    font-size: 1.8rem;
 }

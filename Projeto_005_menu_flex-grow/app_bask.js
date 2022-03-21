@@ -1,4 +1,4 @@
-const circulo = document.querySelector('#circulo-um');
+const circulo = document.querySelector('#circulo');
 
 window.addEventListener('wheel', girou);
 
@@ -10,4 +10,3 @@ function girou(event) {
         circulo.style.transform = `rotate(-90deg)`;
     };
 };
-
