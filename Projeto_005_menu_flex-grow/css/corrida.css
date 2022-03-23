@@ -66,14 +66,13 @@ header {
     padding: 40px 30px;
     background: black;
     display: flex;
-    align-items: flex-st;
 }
 
 #titulo h1 {
     font-size: 4rem;
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    text-align: center;
+    color: #7996A8;
+    text-shadow: 2px 2px 0px black;
+    text-align: right;
     line-height: 5rem;
     z-index: 175;
     border: none;

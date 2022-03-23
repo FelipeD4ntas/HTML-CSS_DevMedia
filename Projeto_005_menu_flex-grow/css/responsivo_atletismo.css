@@ -1,0 +1,321 @@
+@media(max-width: 2560px) {
+    .artigo-dois {
+        background-image: linear-gradient(to right, black 55% , white 0%, white);
+        display: flex;
+    }
+}
+
+@media(max-width: 1440px) {
+    .artigo-dois {
+        background-image: linear-gradient(to right, black 60% , white 0%, white);
+        display: flex;
+    }
+}
+
+@media(max-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .artigos {
+        padding: 70px calc((100% - 960px) / 2);
+    }
+    #circulo {
+        max-width: 600px;
+        left: -70px;
+    }
+    .artigo-um {
+        background-image: linear-gradient(to bottom, black 53% , white 0%, white);
+    }
+    #corredor-dois {
+        max-width: 590px;
+    }
+    #corredor-br {
+        max-width: 490px;
+    }
+    #circulo_dois {
+        max-width: 300px;
+    }
+    
+}
+
+@media(max-width: 990px) {
+    .artigos {
+        padding: 70px calc((100% - 730px) / 2);
+    }
+    .artigo-um {
+        background-image: linear-gradient(to bottom, black 50% , white 0%, white);
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .artigo-dois {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .artigo-tres {
+        margin: 50px 0;
+    }
+    .artigo-quatro {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 50px;
+    }
+    .artigo-um p, 
+    .artigo-um h1 {
+        color: #0d0d0d;
+    }
+    .img-primeiro-art {
+        padding-left: 0;
+        order: -1;
+    }
+    .img-segundo-art {
+        display: none;
+    }
+    .box-primeiro-art {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .primeiro-art,
+    .segundo-art {
+        max-width: 100%;
+    }
+    .segundo-art {
+        padding: 50px 0;
+        padding-right: 30px;
+        background-color: black;
+        
+    }
+    .segundo-art p,
+    .segundo-art h1{
+        color: white;
+    }
+    #corredor {
+        width: 350px;
+    }
+    .img-quarto-art {
+        display: none;
+    }
+    #img-info {
+        display: none;
+    }
+    .cont-info-terceiro-art {
+        max-width: 370px;
+    }
+}
+
+@media(max-width: 760px) {
+    #circulo {
+        max-width: 450px;
+        left: -70px;
+        top: -25px;
+    }
+    #titulo h1 {
+        font-size: 3.5rem;
+        line-height: 4.2rem;
+    }
+    .artigos {
+        padding: 70px calc((100% - 520px) / 2);
+    }
+    .artigo-um {
+        background-image: linear-gradient(to bottom, black 40% , white 0%, white);
+        padding-bottom: 50px;
+    }
+    .artigo-dois {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .artigo-tres {
+        padding-bottom: 0;
+        margin: 50px 0;
+        background-image: linear-gradient(to bottom, black 43%, white 0%, white);
+    }
+    .artigo-quatro {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 50px;
+    }
+    .segundo-art {
+        padding: 50px 0;
+        padding-right: 30px; 
+    }
+    .terceiro-art h1 {
+        color: white;
+    }
+    .box-primeiro-art {
+        padding-top: 30px;
+    }
+    .box-sub-art-tres {
+        flex-direction: column;
+    }
+    .sub-artigo-um {
+        padding-top: 0;
+        flex-direction: column;
+    }
+    .sub-terceiro-art {
+        padding-top: 30px;
+        order: -1;
+    }
+    .info-terceiro-art {
+        width: 100%;
+        min-height: 640px;
+        padding: 50px 30px 0 30px;
+    }
+    .cont-info-terceiro-art {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 600px) {
+    h2 {
+        font-size: 2.2rem;
+    }
+    #btn-voltar {
+        filter: none;
+        width: 25px;
+    }
+    header {
+        height: 30vh;
+    }
+    .bg-topo-um, 
+    .bg-topo-dois {
+        width: 0%;
+        border: none;
+    }
+    .box-titulo {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    #circulo {
+        display: none;
+    }
+    #titulo h1 {
+        font-size: 4.8rem;
+        line-height: 5rem;
+        text-align: center;
+    }
+    .artigos {
+        padding: 70px calc((100% - 350px) / 2);
+    }
+    .artigo-um {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    .artigo-dois {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .artigo-tres {
+        padding-bottom: 0;
+        margin: 50px 0;
+        background-image: linear-gradient(to bottom, black 42%, white 0%, white);
+    }
+    .artigo-quatro {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-image: linear-gradient(to left, black 48% , white 0%, white);
+    }
+    .segundo-art {
+        padding: 50px 0;
+        padding-right: 30px;
+    }
+    .quarto-art {
+        padding-right: 0;
+        padding-left: 30px;
+    }
+    .info-terceiro-art {
+        width: 100%;
+        min-height: 650px;
+        padding: 50px 0 0 0;
+    }
+}
+
+@media(max-width: 400px) {
+    .artigos {
+        padding: 70px calc((100% - 330px) / 2);
+    }
+    h1 {
+        font-size: 2.21rem;
+    }
+    #btn-voltar {
+        left: 50px;
+        top: 10px;
+    }
+    #titulo h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+        text-align: center;
+    }
+    .artigo-um {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    .artigo-dois {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .artigo-tres {
+        padding-bottom: 0;
+    }
+    .artigo-quatro {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .segundo-art {
+        padding: 50px 0;
+        padding-right: 30px;
+    }
+    .quarto-art {
+        padding-right: 0;
+        padding-left: 30px;
+    }
+    .info-terceiro-art {
+        padding: 50px 0 0 0;
+    }
+}
+
+@media(max-width: 280px) {
+    .artigos {
+        padding: 70px calc((100% - 250px) / 2);
+    }
+    h1 {
+        font-size: 2.21rem;
+    }
+    #btn-voltar {
+        left: 50px;
+        top: 10px;
+    }
+    #titulo h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+        text-align: right;
+    }
+    .artigo-um {
+        padding-top: 0;
+        padding-bottom: 50px;
+    }
+    .artigo-dois {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .artigo-tres {
+        padding-bottom: 0;
+    }
+    .artigo-quatro {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .segundo-art {
+        padding: 50px 0;
+        padding-right: 30px;
+    }
+    .quarto-art {
+        padding-right: 0;
+        padding-left: 30px;
+    }
+    .info-terceiro-art {
+        padding: 50px 0 0 0;
+    }
+}
